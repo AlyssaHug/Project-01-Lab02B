@@ -24,9 +24,6 @@ hr {
    Base Mobile Screen
    ========================================================================== */
   @media screen and (max-width: 39.9375em) {
-
-  
-  
 /*==================================
     Body Styles - Alyssa
   ==================================*/
@@ -35,12 +32,16 @@ hr {
 
   .page__intro {
     font-weight: lighter;
+    text-align: center;
+    font-size: 34px;
   }
   .brand-name {
     color: #1EAFDE;
-    text-align: center;
   }
 
+  /*====Services Section====*/
+
+  
 
 /*
  * Hide visually and from screen readers
