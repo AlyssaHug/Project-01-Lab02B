@@ -3,7 +3,7 @@
    ========================================================================== */
 
    html {
-    color: #222;
+    color: #3B3B3B;
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Ubuntu';
@@ -23,23 +23,58 @@
     padding: 0;
   }
   
+/* Thea's code! Header Section */
+
   /* ==========================================================================
      Base Mobile Screen
      ========================================================================== */
      
   @media screen and (max-width: 39.9375em){
 
+    /* Top Banner Hide when Screen Smaller */
     .banner, .column,
     [hidden] {
       display: none !important;
     }
 
+    /* make logo shift */
+    .company__logo{
+      max-width: 100%;
+      height: auto;
+    }
 
   }
-  
-  
 
+
+  /* ==========================================================================
+      Media Query for Tablet
+     ========================================================================== */
   
+     @media only screen and (min-width: 40em) {
+      /* Style adjustments for viewports that meet the condition */
+    }
+    
+    /* ==========================================================================
+        Media Query for Desktop
+       ========================================================================== */
+    
+       @media only screen and (min-width: 64em) {
+        /* Style adjustments for viewports that meet the condition */
+      }
+  
+/* Styling for whole website! */
+
+.nav__arrow:hover {
+  opacity: 0%;
+}
+
+.company__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
   
   /*
    * Hide only visually, but have it available for screen readers:
@@ -59,18 +94,4 @@
     /* 1 */
   }
   
-  /* ==========================================================================
-      Media Query for Tablet
-     ========================================================================== */
   
-  @media only screen and (min-width: 40em) {
-    /* Style adjustments for viewports that meet the condition */
-  }
-  
-  /* ==========================================================================
-      Media Query for Desktop
-     ========================================================================== */
-  
-     @media only screen and (min-width: 64em) {
-      /* Style adjustments for viewports that meet the condition */
-    }
