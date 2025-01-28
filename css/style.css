@@ -46,13 +46,38 @@ hr {
   .services__title {
     text-align: center;
     font-weight: lighter;
+    margin: auto auto 1rem;
   }
   .services__subtitle {
     text-align: center;
     font-weight: lighter;
     color: #A3A3A3;
     font-size: 11px;
+    margin: auto auto 2rem;
   }
+    /*==service items==*/
+    .service__item {
+      display: flex;
+      align-content: center;
+      margin-bottom: 30px;
+    }
+    .service__icon {
+      max-width: 80px;
+      max-height: 80px;
+      margin-right: 10px;
+    }
+    .service__text {
+      flex-direction: column;
+    }
+    .service__header {
+      font-size: 16px;
+      margin: auto auto 5px;
+    }
+    .service__desc {
+      margin: auto 80px 5px 5px;
+      font-size: 12px;
+      color: #939393;
+    }
 /*
  * Hide visually and from screen readers
  */
