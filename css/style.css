@@ -32,7 +32,14 @@ hr {
   ==================================*/
 
   /*====Page Title====*/
-  
+
+  .page__intro {
+    font-weight: lighter;
+  }
+  .brand-name {
+    color: #1EAFDE;
+    text-align: center;
+  }
 
 
 /*
