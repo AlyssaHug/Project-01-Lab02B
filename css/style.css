@@ -27,14 +27,17 @@
      Base Mobile Screen
      ========================================================================== */
      
-  /*
-   * Hide visually and from screen readers
-   */
-  
-  .banner, .column,
-  [hidden] {
-    display: none !important;
+  @media screen and (max-width: 39.9375em){
+
+    .banner, .column,
+    [hidden] {
+      display: none !important;
+    }
+
+
   }
+  
+  
 
   
   
@@ -60,7 +63,7 @@
       Media Query for Tablet
      ========================================================================== */
   
-  @media only screen and (min-width: 35em) {
+  @media only screen and (min-width: 40em) {
     /* Style adjustments for viewports that meet the condition */
   }
   
@@ -68,6 +71,6 @@
       Media Query for Desktop
      ========================================================================== */
   
-     @media only screen and (min-width: 35em) {
+     @media only screen and (min-width: 64em) {
       /* Style adjustments for viewports that meet the condition */
     }
