@@ -20,10 +20,14 @@ hr {
   padding: 0;
 }
 
+.brand-name {
+  color: #1EAFDE;
+}
+
 /* ==========================================================================
    Base Mobile Screen
    ========================================================================== */
-  @media screen and (max-width: 39.9375em) {
+   @media screen and (max-width: 39.9375em) {
 /*==================================
     Body Styles - Alyssa
   ==================================*/
@@ -34,15 +38,21 @@ hr {
     font-weight: lighter;
     text-align: center;
     font-size: 34px;
-  }
-  .brand-name {
-    color: #1EAFDE;
+    padding: 2rem;
   }
 
   /*====Services Section====*/
 
-  
-
+  .services__title {
+    text-align: center;
+    font-weight: lighter;
+  }
+  .services__subtitle {
+    text-align: center;
+    font-weight: lighter;
+    color: #A3A3A3;
+    font-size: 11px;
+  }
 /*
  * Hide visually and from screen readers
  */
