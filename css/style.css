@@ -36,6 +36,7 @@ footer{
   padding-bottom: 4px;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 100vw;
 }
 
 .flexbox_container{
@@ -49,6 +50,10 @@ footer span{
 .director__image{
   width:7.375rem;
   height: 7.375rem;
+}
+
+.track__square{
+  display:flex;
 }
 
 .track__square--purple{
@@ -79,6 +84,17 @@ footer span{
   height: 32px;
 }
 
+.reviews__heading{
+  color:#19B2DE;
+}
+
+
+.colors{
+  width: 25rem;
+  height: 1.0625rem;
+  flex-shrink: 0;
+}
+
 /*mobile phone screen style*/
 @media screen and (max-width: 39.9375em){
   /* About us and instagram section hidden in mobile size */
@@ -87,14 +103,21 @@ footer span{
     display: none !important;
   }
 
+  footer{
+    flex-direction: column;
+  }
+
+  .flexbox_container{
+    display: flex;
+    flex-direction: column;
+  }
+
   .director__info{
     display: flex;
-    width: 26rem;
-    padding: 2rem;
     align-items: flex-start;
-    
+    width: 26rem;
+    margin: 2rem;
     gap: 2rem;
-    order:0;
   }
 
   .director__image{
@@ -102,13 +125,18 @@ footer span{
     height: 6rem;
   }
 
+  .director__caption{
+    width: 20rem;
+    height:auto;
+    flex-shrink: 0;
+  }
+
   .track{
     display:flex;
+    flex-direction: column;
     width: 15rem;
     height: 11rem;
     flex-shrink: 0;
-    flex-basis: 100%;
-    order:-1;
   }
 
   .review{
@@ -116,8 +144,10 @@ footer span{
     width: 24.6875rem;
     height: 20.875rem;
     flex-direction: column;
+    align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
+    
   }
 }
 
