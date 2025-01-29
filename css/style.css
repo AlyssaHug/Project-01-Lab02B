@@ -20,15 +20,58 @@ html {
 
 }
 
-img{
-  width:20px;
-  height:20px;
+/*Sandy's footer section*/
+
+/*General footer style*/
+footer{
+  background-color: #0E2E4E;
+  color:#fff;
+  display:flex;
+  margin:auto;
+  padding-top:4px;
+  padding-bottom: 4px;
+  flex-wrap: wrap;
 }
 
+/*director section style*/
+
+.director__info{
+  display: flex;
+  width: 47.5rem;
+  padding: 2rem;
+  align-items: center;
+  gap: 2rem;
+  
+  
+  }
+
+/*.instagram section style*/
+
+
+/*reviews section style*/
+footer span{
+  color: #19B2DE;
+}
+
+/*track section style*/
+
+
+/*phone screen style*/
 @media screen and (max-width: 39.9375em){
   /* About us and instagram section hidden in mobile size */
   .about, .instagram,
   [hidden] {
     display: none !important;
   }
+
+.director__info{
+  display: flex;
+  width: 38.5rem;
+  padding: 2rem;
+  align-items: center;
+  gap: 2rem;
 }
+}
+
+
+/*tablet screen style*/
