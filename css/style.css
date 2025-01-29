@@ -20,10 +20,10 @@ hr {
   padding: 0;
 }
 
+/*====Page Titles====*/
 .brand-name {
   color: #1EAFDE;
 }
-  /*====Page Title====*/
 
  h1 {
     font-weight: lighter;
@@ -44,6 +44,105 @@ hr {
     margin: auto auto 2rem;
   }
 
+      /*==service items==*/
+      .service__item {
+        display: flex;
+        justify-content: center;
+        margin: 1em auto;
+        transform: translate(8%, 0);
+      }
+      .service__icon {
+        max-width: 80px;
+        max-height: 80px;
+        margin-right: 10px;
+      }
+      .service__text {
+        flex-direction: column;
+      }
+      .service__header {
+        font-size: 16px;
+        margin: auto auto 5px 5px;
+      }
+      .service__desc {
+        margin: auto 80px 5px 5px;
+        font-size: 12px;
+        color: #939393;
+      }
+  
+  /*====News Section====*/
+    /*==news container==*/
+    .news-item {
+      position: relative;
+      width: 350px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 15px auto;
+    }
+
+      /*==news date==*/
+      .news__date {
+        position: absolute;
+        background-color: #d16a6a;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        border-radius: 4px;
+      }
+      .date__day {
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        margin: auto;
+      }
+      .date__month {
+        font-size: 8px;
+        margin: 0 auto;
+      }
+      /*==news picture==*/
+      .news__picture {
+        width: 400px;
+        height: 288px;
+        object-fit: cover;
+  
+      }
+      /*==news title==*/
+      .news__info {
+        background-color: #19B2DE;
+        color: white;
+        text-align: left;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 1px;
+        width: 100%;
+        display: flex;
+      }
+      .news__heading {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 5px 10px 0;
+      }
+      .news__subheading {
+        font-size: 11px;
+        margin: 0 10px 10px;
+      }
+      .news__icon {
+        position: absolute;
+        right: 20px;
+        width: 28px;
+        top: 11px;
+        height: 28px;
+        background-color: #007bbf;
+        border-radius: 2px;
+      }
+    /*==Gallery images==*/
+      .gallery__image {
+        margin: 5px;
+        width: 400px;
+        height: 256px;
+        align-self: center;
+      }
+
 /* ==========================================================================
    Base Mobile Screen
    ========================================================================== */
@@ -58,101 +157,6 @@ hr {
     padding: 5rem 2rem 2rem;
   }
 
-  /*====Services Section====*/
-
-
-    /*==service items==*/
-    .service__item {
-      display: flex;
-      justify-content: center;
-      margin: 1em auto;
-      transform: translate(8%, 0);
-    }
-    .service__icon {
-      max-width: 80px;
-      max-height: 80px;
-      margin-right: 10px;
-    }
-    .service__text {
-      flex-direction: column;
-    }
-    .service__header {
-      font-size: 16px;
-      margin: auto auto 5px 5px;
-    }
-    .service__desc {
-      margin: auto 80px 5px 5px;
-      font-size: 12px;
-      color: #939393;
-    }
-
-  /*====News Section====*/
-    /*==news container==*/
-    .news-item {
-      position: relative;
-      width: 350px;
-      border-radius: 8px;
-      overflow: hidden;
-      margin: 15px auto;
-    }
-
-    /*==news date==*/
-    .news__date {
-      position: absolute;
-      background-color: #d16a6a;
-      color: white;
-      padding: 5px 10px;
-      text-align: center;
-      border-radius: 4px;
-    }
-    .date__day {
-      font-size: 20px;
-      font-weight: bold;
-      display: block;
-      margin: auto;
-    }
-    .date__month {
-      font-size: 8px;
-      margin: 0 auto;
-    }
-    /*==news picture==*/
-    .news__picture {
-      width: 400px;
-      height: 288px;
-      object-fit: cover;
-
-    }
-    /*==news title==*/
-    .news__info {
-      background-color: #19B2DE;
-      color: white;
-      text-align: left;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 1px;
-      width: 100%;
-      display: flex;
-    }
-    .news__heading {
-      font-size: 16px;
-      font-weight: bold;
-      margin: 5px 10px 0;
-    }
-    .news__subheading {
-      font-size: 11px;
-      margin: 0 10px 10px;
-    }
-    .news__icon {
-      position: absolute;
-      right: 20px;
-      width: 28px;
-      top: 11px;
-      height: 28px;
-      background-color: #007bbf;
-      border-radius: 2px;
-    }
-
   /*====Gallery Section====*/
 
   .page-gallery {
@@ -165,13 +169,6 @@ hr {
       flex-direction: column;
 
     }
-    .gallery__image {
-      margin: 5px;
-      width: 400px;
-      height: 256px;
-      align-self: center;
-    }
-
   /*====Clients section====*/
   .page-clients,
   [hidden] {
