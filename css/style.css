@@ -12,10 +12,14 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: #3B3B3B;
   font-size: 1em;
   line-height: 1.4;
+  font-family: Ubuntu;
+  padding: 0;
+
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
