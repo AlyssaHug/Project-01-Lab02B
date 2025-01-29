@@ -71,10 +71,9 @@ hr {
   
   /*====News Section====*/
     /*==news container==*/
-    .news-item {
+    .news-item, .news-priority {
       position: relative;
       width: 350px;
-      border-radius: 8px;
       overflow: hidden;
       margin: 15px auto;
     }
@@ -86,7 +85,6 @@ hr {
         color: white;
         padding: 5px 10px;
         text-align: center;
-        border-radius: 4px;
       }
       .date__day {
         font-size: 20px;
@@ -102,8 +100,6 @@ hr {
       .news__picture {
         width: 400px;
         height: 288px;
-        object-fit: cover;
-  
       }
       /*==news title==*/
       .news__info {
@@ -208,6 +204,34 @@ hr {
 
 @media screen and (min-width: 40em) {
   /* Style adjustments for viewports that meet the condition */
+/*==================================
+    Body Styles - Alyssa
+  ==================================*/
+
+  /*====Services section====*/
+
+
+  /*====News section====*/
+  .news__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news-priority {
+    flex-grow: 2;
+  }
+
+article .news__picture {
+  width: 600px;
+  height: 360px;
+}
+
+.news__info {
+  max-width: 598px;
+}
+
+  /*====Gallery section====*/
+
+  /*====Clients section====*/
 }
 
 /* ==========================================================================
