@@ -213,18 +213,24 @@ hr {
 
   /*====News section====*/
   .news__content {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news-item {
+    width: 292px;
+    height: 256px;
   }
   .news-priority {
     flex-grow: 2;
+    grid-column: span 2;
+    width: 600px;
+    height: 360px;
   }
-
-article .news__picture {
-  width: 600px;
-  height: 360px;
-}
-
+  article .news__picture {
+    width: 600px;
+    height: 360px;
+  }
 .news__info {
   max-width: 598px;
 }
