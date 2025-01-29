@@ -11,13 +11,13 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+
 html {
   color: #3B3B3B;
   font-size: 1em;
   line-height: 1.4;
   font-family: Ubuntu;
   padding: 0;
-
 }
 
 img{
@@ -42,6 +42,43 @@ footer{
   margin:2rem;
 }
 
+footer span{
+  color: #19B2DE;
+}
+
+.director__image{
+  width:7.375rem;
+  height: 7.375rem;
+}
+
+.track__square--purple{
+  background-color:#527CC4;
+  width: 32px;
+  height: 32px;
+}
+
+.track__square--red{
+  background-color:#E46145;
+  width: 32px;
+  height: 32px;
+}
+
+.track__square--blue{
+  background-color:#00B0E2;
+  width: 32px;
+  height: 32px;
+}
+.track__square--pink{
+  background-color:#F6679C;
+  width: 32px;
+  height: 32px;
+}
+.track__square--yellow{
+  background-color:#FFB901;
+  width: 32px;
+  height: 32px;
+}
+
 /*mobile phone screen style*/
 @media screen and (max-width: 39.9375em){
   /* About us and instagram section hidden in mobile size */
@@ -50,45 +87,43 @@ footer{
     display: none !important;
   }
 
-.director__info{
-  display: flex;
-  width: 26rem;
-  padding: 2rem;
-  align-items: flex-start;
-  gap: 2rem;
-  order:-2;
-}
+  .director__info{
+    display: flex;
+    width: 26rem;
+    padding: 2rem;
+    align-items: flex-start;
+    
+    gap: 2rem;
+    order:0;
+  }
 
-.track{
-  width: 15rem;
-  height: 11rem;
-  flex-shrink: 0;
-  flex-basis: 100%;
-  text-align: right;
-  order:-1;
-;
-}
+  .director__image{
+    width:6rem;
+    height: 6rem;
+  }
 
-.review{
-  display: flex;
-  width: 24.6875rem;
-  height: 20.875rem;
-  flex-direction: column;
-  gap: 0.625rem;
-  flex-shrink: 0;
-  order:0;
-}
+  .track{
+    display:flex;
+    width: 15rem;
+    height: 11rem;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    order:-1;
+  }
 
-footer span{
-  color: #19B2DE;
-}
+  .review{
+    display: flex;
+    width: 24.6875rem;
+    height: 20.875rem;
+    flex-direction: column;
+    gap: 0.625rem;
+    flex-shrink: 0;
+  }
 }
 
 /*tablet screen style*/
 @media only screen and (min-width: 40em){
-  footer span{
-    color: #19B2DE;
-  }
+  
 
 }
 
@@ -110,9 +145,7 @@ footer span{
 
 
 /*reviews section style*/
-footer span{
-  color: #19B2DE;
-}
+
 
 /*track section style*/
 
