@@ -60,16 +60,13 @@ hr {
 
   /*====Services Section====*/
 
-  .page-services {
-    position: relative;
-    padding: 2em auto;
-  }
+
     /*==service items==*/
     .service__item {
       display: flex;
-      align-content: center;
-      margin-left: 2em;
-
+      justify-content: center;
+      margin: 1em auto;
+      transform: translate(8%, 0);
     }
     .service__icon {
       max-width: 80px;
@@ -162,17 +159,17 @@ hr {
     margin: 50px auto;
   }
     /*==Gallery content==*/
-    gallery__content {
+    .gallery__content {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin: auto auto 1rem;
-      position: relative;
+
     }
     .gallery__image {
       margin: 5px;
       width: 400px;
       height: 256px;
+      align-self: center;
     }
 
   /*====Clients section====*/
