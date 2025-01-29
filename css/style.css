@@ -39,9 +39,17 @@
 
     /* make logo shift */
     .company__logo{
-      max-width: 100%;
-      height: auto;
+    position: absolute;
+    display: block;
     }
+
+    .page__intro {
+      font-weight: lighter;
+      text-align: center;
+      font-size: 34px;
+      padding: 5rem 2rem 2rem 2rem;
+    }
+
 
   }
 
