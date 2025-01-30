@@ -62,11 +62,11 @@
       /* Style adjustments for viewports that meet the condition */
       
 /* navbar stuff */
-
+/* logo */
 .company__logo{
   padding-top: 1rem;
 }
-
+/* remove the list dots and makes if a flex */
 .nav__list {
   list-style-type: none;
   margin: 0;
@@ -76,11 +76,13 @@
   justify-content: space-between; 
 }
 
+/* centers text and makes it grow and shrink */
 .nav__item {
   flex: 1; 
   text-align: center; 
 }
 
+/*  is the inside content! (text) */
 .nav__item a {
   display: block;
   color: white;
@@ -88,13 +90,38 @@
   padding: 1rem 1rem;
   text-decoration: none;
   padding-top: 3rem;
+  transition: 0.3s ease;
 }
 
+
+
+
+    }
+    
+    /* ==========================================================================
+        Media Query for Desktop
+       ========================================================================== */
+    
+       @media only screen and (min-width: 64em) {
+        /* Style adjustments for viewports that meet the condition */
+      }
+  
+/* Styling for whole website! */
+
+/* company logo positioning */
+.company__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* make nav bar change colour when hovering */
 .nav__item a:hover {
   background-color: #F0F08C;
   color: #0057C2;
 }
 
+/* nav colours */
 #nav__home {
   background-color: #25C389;
 }
@@ -119,28 +146,15 @@
   background-color: #265787;
 }
 
-
-    }
-    
-    /* ==========================================================================
-        Media Query for Desktop
-       ========================================================================== */
-    
-       @media only screen and (min-width: 64em) {
-        /* Style adjustments for viewports that meet the condition */
-      }
-  
-/* Styling for whole website! */
-
-.nav__arrow:hover {
-  opacity: 0%;
+/* make nav arrow go invis when hover */
+.nav__arrow {
+  transition: opacity 0.3s ease; 
 }
 
-.company__logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.nav__item a:hover .nav__arrow {
+  opacity: 0; 
 }
+
 
 
 
