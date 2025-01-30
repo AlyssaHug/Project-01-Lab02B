@@ -221,7 +221,6 @@ hr {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 15px;
       }
     .service__icon {
       margin-bottom: 10px;
@@ -297,6 +296,9 @@ hr {
   /*====Services section====*/
     .services__content {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
   /*====News section====*/
