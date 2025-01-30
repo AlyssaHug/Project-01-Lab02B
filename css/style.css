@@ -215,6 +215,9 @@ hr {
   .news__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    align-items: start;
+    gap: 10px;
   }
 
   .news-item {
@@ -246,4 +249,32 @@ hr {
 
    @media screen and (min-width: 64em) {
     /* Style adjustments for viewports that meet the condition */
+
+ /*==================================
+    Body Styles - Alyssa
+  ==================================*/
+
+  /*====Services section====*/
+
+
+  /*====News section====*/
+    .news__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 1024px;
+      gap: 34px;
+    }
+    .news-item {
+      width: 320px;
+      height: 256px;
+      grid-column: span 1;
+    }
+    .news-priority {
+      grid-column: span 1;
+      width: 320px;
+      height: 256px;
+    }
   }
