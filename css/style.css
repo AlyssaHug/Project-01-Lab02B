@@ -145,7 +145,7 @@ hr {
     /*==Gallery images==*/
       .gallery__image {
         margin: 5px;
-        width: 25rem;
+        width: 24rem;
         height: 16rem;
         align-self: center;
       }
@@ -235,7 +235,6 @@ hr {
     align-items: start;
     gap: 10px;
   }
-
   .news-item {
     width: 292px;
     height: 256px;
@@ -255,8 +254,20 @@ hr {
 }
 
   /*====Gallery section====*/
-
+  .gallery__image{
+    width: 292px;
+    height: 256px;
+  }
   /*====Clients section====*/
+  .clients__content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo__image {
+    width: 190px;
+    height: 128px;
+    margin: auto 5px;
+  }
 }
 
 /* ==========================================================================
@@ -271,9 +282,31 @@ hr {
   ==================================*/
 
   /*====Services section====*/
-
+  .page-services{
+    margin: 50px auto;
+  }
+  .service__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1.25rem;
+  }
+  .service__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+  }
 
   /*====News section====*/
+  .page-news {
+    margin: 50px auto;
+  }
     .news__content {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -281,7 +314,7 @@ hr {
       align-items: center;
       margin: 0 auto;
       max-width: 1024px;
-      gap: 34px;
+      gap: 0px;
     }
     .news-item {
       width: 320px;
@@ -292,5 +325,27 @@ hr {
       grid-column: span 1;
       width: 320px;
       height: 256px;
+    }
+
+    /*====gallery section====*/
+    .gallery__content {
+      margin-right: auto;
+      margin-left: 240px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(340px, 1fr));
+      gap: 0;
+      max-width: 900px;
+    }
+    .gallery__image {
+      width: 320px;
+      height: 256px;
+    }
+    .clients__content {
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(200px, 1fr));
+      max-width: 900px;
+      margin-right: auto;
+      margin-left: 245px;
     }
   }
