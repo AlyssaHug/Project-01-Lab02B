@@ -65,21 +65,24 @@
 /* logo */
 .company__logo{
   padding-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  display: flex;
 }
 /* remove the list dots and makes if a flex */
 .nav__list {
   list-style-type: none;
   margin: 0;
-  padding-top: 1rem;
-  width: 100%; 
+  padding: 0;
+  width: 100vw; 
   display: flex; 
-  justify-content: space-between; 
+  justify-content: center; /* Centers navbar items horizontally */
 }
 
 /* centers text and makes it grow and shrink */
 .nav__item {
   flex: 1; 
-  text-align: center; 
+  text-align: left; 
 }
 
 /*  is the inside content! (text) */
@@ -155,6 +158,14 @@
   opacity: 0; 
 }
 
+.nav__arrow {
+  padding: 1rem;
+}
+
+/* delete this this is for my mental sanity while editing the header */
+main img, footer img {
+  width: 6px;
+}
 
 
 
