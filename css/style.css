@@ -55,18 +55,10 @@ hr {
         justify-content: center;
         align-items: flex-start;
       }
-      .services__content {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-        box-sizing: border-box;
-      }
+
       .service__item{
         display: grid;
-        grid-template-columns: 100px 1fr;
+        grid-template-columns: 6rem 1fr;
         align-items: center;
         justify-content: center;
       }
@@ -171,7 +163,15 @@ hr {
   .page__intro {
     padding: 5rem 2rem 2rem;
   }
-
+  .services__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+  }
   /*====Gallery Section====*/
 
   .page-gallery {
@@ -190,24 +190,6 @@ hr {
     display: none !important;
   }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
 }
 /* ==========================================================================
     Media Query for Tablet
@@ -221,12 +203,29 @@ hr {
   ==================================*/
 
   /*====Services section====*/
+    .service__content {
+      display: grid;
+      grid-template-columns: repeat(autofill, minmax(300px, 1fr));
+      gap: 1.25rem;
+      max-width: 75rem;
+      margin: 0 auto;
+      padding: 1.25rem;
+      justify-content: center;
+    }
       .service__item {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, 2fr);
-        margin: 1em auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
       }
+    .service__icon {
+      justify-content: center;
+      align-items: center;
+    }
+    .service__text {
+      max-width: 300px;
+    }
 
   /*====News section====*/
   .news__content {
