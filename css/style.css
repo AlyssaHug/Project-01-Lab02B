@@ -27,7 +27,7 @@ hr {
 /*====Page Titles====*/
 .brand-name {
   color: #1EAFDE;
-}
+} 
  h1 {
     font-weight: lighter;
     text-align: center;
@@ -45,7 +45,6 @@ hr {
     font-size: 11px;
     margin: auto auto 2rem;
   }
-
   .service__icon {
     max-width: 5rem;
     max-height: 5rem;
@@ -58,7 +57,6 @@ hr {
     font-size: 12px;
     color: #939393;
   }
-  
   /*====News Section====*/
     /*==news container==*/
     .news-item, .news-priority {
@@ -67,7 +65,6 @@ hr {
       overflow: hidden;
       margin: 15px auto;
     }
-
       /*==news date==*/
       .news__date {
         position: absolute;
@@ -136,47 +133,42 @@ hr {
 /*==================================
     Body Styles - Alyssa
   ==================================*/
-
   /*====Page Title====*/
-
-  .page__intro {
-    padding: 5rem 2rem 2rem;
-  }
-       /*==service items==*/
-
-  .service__text {
-    flex: 1;
-  }
-      .service__header {
-        margin: auto auto 5px 5px;
-      }
-      .service__desc {
-        margin: auto 80px 5px 5px;
-      }
-  .page-services{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .service__icon {
-    display: flex;
-    
-  }
-
-  .service__item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .services__content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    align-items: center;
-    margin: 0 auto;
-    gap: 10px;
-  }
+    .page__intro {
+      padding: 5rem 2rem 2rem;
+    }
+        /*==service items==*/
+    .service__text {
+      flex: 1;
+    }
+     .service__header {
+      margin: auto auto 5px 5px;
+    }     
+    .service__desc {
+      margin: auto 80px 5px 5px;
+    }
+    .page-services{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .service__icon {
+      display: flex;
+    }
+    .service__item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .services__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+      margin: 0 auto;
+      gap: 10px;
+    }
 
 
   /*====Gallery Section====*/
