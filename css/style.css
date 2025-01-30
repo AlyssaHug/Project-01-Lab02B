@@ -212,9 +212,6 @@ hr {
   ==================================*/
 
   /*====Services section====*/
-  .page-services{
-
-  }
     .services__content {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
