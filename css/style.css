@@ -43,56 +43,55 @@ footer{
   margin:2rem;
 }
 
-footer span{
-  color: #19B2DE;
-}
-
 .director__image{
-  width:7.375rem;
-  height: 7.375rem;
+  width: 10.64794rem;
+  height: 9.20781rem;
+  flex-shrink: 0;
+  border-radius: 100%;
 }
 
 .track__square{
-  display:flex;
+  display: flex; 
+  margin-bottom:1rem;
+  
 }
 
 .track__square--purple{
   background-color:#527CC4;
   width: 32px;
   height: 32px;
+  border-radius: 10%;
+  margin-right: 0.44rem;
 }
 
 .track__square--red{
   background-color:#E46145;
   width: 32px;
   height: 32px;
+  border-radius: 10%;
+  margin-right: 0.44rem;
 }
 
 .track__square--blue{
   background-color:#00B0E2;
   width: 32px;
   height: 32px;
+  border-radius: 10%;
+  margin-right: 0.44rem;
 }
 .track__square--pink{
   background-color:#F6679C;
   width: 32px;
   height: 32px;
+  border-radius: 10%;
+  margin-right: 0.44rem;
 }
 .track__square--yellow{
   background-color:#FFB901;
   width: 32px;
   height: 32px;
-}
-
-.reviews__heading{
-  color:#19B2DE;
-}
-
-
-.colors{
-  width: 25rem;
-  height: 1.0625rem;
-  flex-shrink: 0;
+  border-radius: 10%;
+  margin-right: 0.44rem;
 }
 
 /*mobile phone screen style*/
@@ -118,11 +117,20 @@ footer span{
     width: 26rem;
     margin: 2rem;
     gap: 2rem;
+    order:-2;
+  }
+
+  .director__caption{
+    width:16rem;
+    height:9rem;
+    margin-left:0.47rem;
+    margin-right:1rem;
   }
 
   .director__image{
-    width:6rem;
-    height: 6rem;
+    width: 8.66275rem;
+    height: 7.49113rem;
+    flex-shrink: 0;
   }
 
   .director__caption{
@@ -137,6 +145,15 @@ footer span{
     width: 15rem;
     height: 11rem;
     flex-shrink: 0;
+    order:-1;
+    margin-left:21rem;
+  }
+
+  .colors{
+    width: 25rem;
+    height: 1.0625rem;
+    flex-shrink: 0;
+    margin: auto;
   }
 
   .review{
@@ -147,7 +164,42 @@ footer span{
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    
+    margin-left:1rem;
+    margin-right:1.31rem;
+  }
+
+  .reviews__heading{
+    color:#19B2DE;
+    font-family: Ubuntu;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .user{
+    color: #1BADE6;
+    text-align: justify;
+    font-family: "Open Sans";
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.875rem;
+  }
+  
+  .reviews__content{
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.875rem;
+  }
+
+  .reviews__comment{
+    align-self: stretch;
+    width:24.6875rem;
+    height:5.25rem;
   }
 }
 
@@ -178,5 +230,16 @@ footer span{
 
 
 /*track section style*/
+
+.track__square{
+  display:flex;
+  width: 9rem;
+  height: 5.125rem;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.3125rem;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
 
 }
