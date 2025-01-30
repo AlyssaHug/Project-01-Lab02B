@@ -20,11 +20,6 @@ html {
   padding: 0;
 }
 
-img{
-  width: 20px;
-  height:20px;
-}
-
 /*Sandy's footer section*/
 
 /*General footer style*/
@@ -50,10 +45,21 @@ footer{
   border-radius: 100%;
 }
 
+.reviews__heading{
+  color:#19B2DE;
+  font-family: Ubuntu;
+}
+  .user{
+    color: #1BADE6;
+    text-align: justify;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+  }
+
 .track__square{
   display: flex; 
   margin-bottom:1rem;
-  
 }
 
 .track__square--purple{
@@ -137,6 +143,7 @@ footer{
     width: 20rem;
     height:auto;
     flex-shrink: 0;
+    font-size:0.75rem;
   }
 
   .track{
@@ -153,7 +160,9 @@ footer{
     width: 25rem;
     height: 1.0625rem;
     flex-shrink: 0;
-    margin: auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0;
   }
 
   .review{
@@ -161,26 +170,18 @@ footer{
     width: 24.6875rem;
     height: 20.875rem;
     flex-direction: column;
-    align-items: flex-start;
+    align-items:flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    margin-left:1rem;
-    margin-right:1.31rem;
+    margin: auto;
   }
 
   .reviews__heading{
-    color:#19B2DE;
-    font-family: Ubuntu;
     font-size: 0.9375rem;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
   }
 
   .user{
-    color: #1BADE6;
-    text-align: justify;
-    font-family: "Open Sans";
     font-size: 0.5625rem;
     font-style: normal;
     font-weight: 700;
@@ -201,6 +202,23 @@ footer{
     width:24.6875rem;
     height:5.25rem;
   }
+
+  .track__email{
+    background-color:#DE6262;
+    width: 11rem;
+    height: 2rem;
+    flex-shrink: 0;
+    margin-right:0;
+  }
+  button{
+    background-color:#FFB901;; 
+    width: 3.33331rem;
+    height: 2rem;
+    flex-shrink: 0;
+    margin-left:0;
+    float:right;
+  }
+
 }
 
 /*tablet screen style*/
