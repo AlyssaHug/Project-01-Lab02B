@@ -340,10 +340,12 @@ hr {
     /*====gallery section====*/
     .gallery__content {
       display: grid;
-      grid-template-columns: repeat(3, minmax(340px, 1fr));
-      gap: 0;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      align-items: center;
       margin: 0 auto;
-      max-width: 900px;
+      max-width: 1024px;
+      gap: 0px;
     }
     .gallery__image {
       width: 320px;
@@ -352,10 +354,12 @@ hr {
     }
     .clients__content {
       display: grid;
-      grid-template-columns: repeat(5, minmax(200px, 1fr));
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      align-items: center;
       margin: 0 auto;
+      max-width: 1024px;
       gap: 0px;
-      max-width: 900px;
     }
     .client__logo {
       grid-column: span 1;
