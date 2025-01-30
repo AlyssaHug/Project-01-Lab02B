@@ -166,12 +166,13 @@ hr {
   .services__content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.25rem;
-    max-width: 75rem;
+    grid-template-rows: auto;
+    align-items: center;
     margin: 0 auto;
-    padding: 0 1.25rem;
-    box-sizing: border-box;
+    gap: 10px;
   }
+
+
   /*====Gallery Section====*/
 
   .page-gallery {
