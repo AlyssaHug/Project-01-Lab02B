@@ -8,12 +8,9 @@
     line-height: 1.4;
     font-family: 'Ubuntu';
   }
-  
-  
   /*
    * A better looking default horizontal rule
    */
-  
   hr {
     display: block;
     height: 1px;
@@ -22,7 +19,58 @@
     margin: 1em 0;
     padding: 0;
   }
+/* Styling for whole website! - Thea */
+    /* company logo positioning */
+    .company__logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
+    /* make nav bar change colour when hovering */
+    .nav__item a:hover {
+      background-color: #F0F08C;
+      color: #0057C2;
+    }
+
+    /* nav colours */
+    #nav__home {
+      background-color: #25C389;
+    }
+
+    #nav__portfolio{
+      background-color: #FFB901;
+    }
+
+    #nav__blog {
+      background-color: #DE6262;
+    } 
+
+    #nav__quo{
+      background-color: #19B2DE;
+    }
+
+    #nav__chat {
+      background-color: #265787;
+    }
+
+    /* make nav arrow go invis when hover */
+    .nav__arrow {
+      transition: opacity 0.3s ease; 
+      padding: 1rem;
+
+    }
+    .nav__arrow {
+      font-size: 1.3rem;
+    }
+    .nav__item a:hover .nav__arrow {
+      opacity: 0; 
+    }
+    /* delete this this is for my mental sanity while editing the header 
+    main img, footer img {
+      width: 6px;
+    }
+    */
 /*==================================
     Body Styles - Alyssa
   ==================================*/
@@ -487,37 +535,6 @@ max-width: 598px;
   }
   .client__logo {
     grid-column: span 1;
-  }
-/*====more nav styes====*/
-      #nav__quo{
-        background-color: #19B2DE;
-      }
-
-
-      #nav__chat {
-        background-color: #265787;
-      }
-
-      /* make nav arrow go invis when hover */
-      .nav__arrow {
-        transition: opacity 0.3s ease; 
-        padding: 1rem;
-
-      }
-
-
-      .nav__arrow {
-        font-size: 1.3rem;
-      }
-
-      .nav__item a:hover .nav__arrow {
-        opacity: 0; 
-      }
-
-      /* delete this this is for my mental sanity while editing the header */
-      footer img {
-        width: 6px;
-      }
-         
+  }      
 }
 
