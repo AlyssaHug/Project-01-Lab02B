@@ -284,9 +284,9 @@ max-width: 598px;
 
 
   /* ==========================================================================
-      Media Query for Tablet - restricted
+      Media Query for Desktop
      ========================================================================== */
-   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+   @media screen and (min-width: 64em){
       /* Style adjustments for viewports that meet the condition */
       
 /*==================================
