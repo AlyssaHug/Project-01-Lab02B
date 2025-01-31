@@ -8,12 +8,9 @@
     line-height: 1.4;
     font-family: 'Ubuntu';
   }
-  
-  
   /*
    * A better looking default horizontal rule
    */
-  
   hr {
     display: block;
     height: 1px;
@@ -22,15 +19,175 @@
     margin: 1em 0;
     padding: 0;
   }
-  
-/* Thea's code! Header Section */
+/* Styling for whole website! - Thea */
+    /* company logo positioning */
+    .company__logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* make nav bar change colour when hovering */
+    .nav__item a:hover {
+      background-color: #F0F08C;
+      color: #0057C2;
+    }
+
+    /* nav colours */
+    #nav__home {
+      background-color: #25C389;
+    }
+
+    #nav__portfolio{
+      background-color: #FFB901;
+    }
+
+    #nav__blog {
+      background-color: #DE6262;
+    } 
+
+    #nav__quo{
+      background-color: #19B2DE;
+    }
+
+    #nav__chat {
+      background-color: #265787;
+    }
+
+    /* make nav arrow go invis when hover */
+    .nav__arrow {
+      transition: opacity 0.3s ease; 
+      padding: 1rem;
+
+    }
+    .nav__arrow {
+      font-size: 1.3rem;
+    }
+    .nav__item a:hover .nav__arrow {
+      opacity: 0; 
+    }
+    /* delete this this is for my mental sanity while editing the header 
+    main img, footer img {
+      width: 6px;
+    }
+    */
+/*==================================
+    Body Styles - Alyssa
+  ==================================*/
+
+/*====Page Titles====*/
+.brand-name {
+  color: #1EAFDE;
+} 
+ h1 {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 34px;
+ }
+  h2 {
+    text-align: center;
+    font-weight: lighter;
+    margin: auto auto 1rem;
+  }
+ h4 {
+    text-align: center;
+    font-weight: lighter;
+    color: #A3A3A3;
+    font-size: 11px;
+    margin: auto auto 2rem;
+  }
+  .service__icon {
+    max-width: 5rem;
+    max-height: 5rem;
+    margin: 0 auto;
+  }
+  .service__header {
+    font-size: 16px;
+  }
+  .service__desc {
+    font-size: 12px;
+    color: #939393;
+  }
+  /*====News Section====*/
+    /*==news container==*/
+    .news-item, .news-priority {
+      position: relative;
+      width: 28rem;
+      overflow: hidden;
+      margin: 15px auto;
+    }
+      /*==news date==*/
+      .news__date {
+        position: absolute;
+        background-color: #d16a6a;
+        color: white;
+        padding: 0.3rem 0.6rem;
+        text-align: center;
+      }
+      .date__day {
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        margin: auto;
+      }
+      .date__month {
+        font-size: 8px;
+        margin: 0 auto;
+      }
+      /*==news picture==*/
+      .news__picture {
+        width: 30rem;
+        height: 18rem;
+      }
+      /*==news title==*/
+      .news__info {
+        background-color: #19B2DE;
+        color: white;
+        text-align: left;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 1px;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+      }
+      .news__heading {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 5px 10px 0;
+      }
+      .news__subheading {
+        font-size: 11px;
+        margin: 0 10px 10px;
+      }
+
+      .news__icon {
+        position: absolute;
+        right: 1rem;
+        width: 2rem;
+        top: 0.7rem;
+        height: 2rem;
+        background-color: #007bbf;
+        border-radius: 2px;
+      }
+    /*==Gallery images==*/
+      .gallery__image {
+        margin: 5px;
+        width: 24rem;
+        height: 16rem;
+        align-self: center;
+      }
+
+
 
   /* ==========================================================================
      Base Mobile Screen
      ========================================================================== */
      
   @media screen and (max-width: 39.9375em){
-
+/* Thea's code! Header Section */
     /* Top Banner Hide when Screen Smaller */
     .banner, .column,
     [hidden] {
@@ -50,51 +207,50 @@
       padding: 5rem 2rem 2rem 2rem;
     }
 
+   /*==================================
+    Body Styles - Alyssa
+  ==================================*/
+
+  /*====Page Title====*/
+
+  .page__intro {
+    padding: 5rem 2rem 2rem;
+  }
+       /*==service items==*/
+
+  .service__text {
+    flex: 1;
+  }
+      .service__header {
+        margin: auto auto 5px 5px;
+      }
+      .service__desc {
+        margin: auto 80px 5px 5px;
+      }
+  .page-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .service__icon {
+    display: flex;
 
   }
 
-
-  /* ==========================================================================
-      Media Query for Tablet
-     ========================================================================== */
-  
-     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-      /* Style adjustments for viewports that meet the condition */
-      
-/* navbar stuff */
-/* logo */
-.company__logo{
-  padding-top: 1rem;
-  margin-bottom: 1rem;
-  justify-content: center;
-  display: flex;
-}
-/* remove the list dots and makes if a flex */
-.nav__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100vw; 
-  display: flex; 
-  justify-content: center; /* Centers navbar items horizontally */
-}
-
-/* centers text and makes it grow and shrink */
-.nav__item {
-  flex: 1; 
-  text-align: left; 
-}
-
-/*  is the inside content! (text) */
-.nav__item a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 1rem 1rem;
-  text-decoration: none;
-  padding-top: 3rem;
-  transition: 0.3s ease;
-}
+  .service__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .services__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+  }
 
 /* for the banner */
 .banner__image{
@@ -139,18 +295,195 @@
   background-color: white;
 }
 
+  /*====Gallery Section====*/
 
+  .page-gallery {
+    margin: 50px auto;
+  }
+    /*==Gallery content==*/
+    .gallery__content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
 
     }
+  /*====Clients section====*/
+  .page-clients,
+  [hidden] {
+    display: none !important;
+  }
+
+  }
+
+   /* ==========================================================================
+      Media Query for Tablet
+     ========================================================================== */
+   @media screen and (min-width: 40em) {
+ /*==================================
+    Body Styles - Alyssa
+  ==================================*/
+
+  /*====Services section====*/
+  .services__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+    .service__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .service__icon {
+    margin-bottom: 10px;
+  }
+  .service__header {
+    text-align: center;
+  }
+
+/*====News section====*/
+.news__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.news-item {
+  width: 292px;
+  height: 256px;
+}
+.news-priority {
+  flex-grow: 2;
+  grid-column: span 2;
+  width: 600px;
+  height: 360px;
+}
+article .news__picture {
+  width: 600px;
+  height: 360px;
+}
+.news__info {
+max-width: 598px;
+}
+
+/*====Gallery section====*/
+.gallery__content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  margin: 0 auto;
+  max-width: 600px;
+}
+.gallery__image{
+  width: 292px;
+  height: 256px;
+}
+/*====Clients section====*/
+.clients__content{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  max-width: 600px;
+  margin: 0 auto;
+}
+.logo__image {
+  width: 190px;
+  height: 128px;
+}
+
+}
+
+  /* ==========================================================================
+      Media Query for Tablet
+     ========================================================================== */
+       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      /* Style adjustments for viewports that meet the condition */
+
+      /* navbar stuff */
+      /* logo */
+      .company__logo{
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+        display: flex;
+      }
+      /* remove the list dots and makes if a flex */
+      .nav__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100vw; 
+        display: flex; 
+        justify-content: center; /* Centers navbar items horizontally */
+      }
+      
+      /* centers text and makes it grow and shrink */
+      .nav__item {
+        flex: 1; 
+        text-align: left; 
+      }
+      
+      /*  is the inside content! (text) */
+      .nav__item a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1rem 1rem;
+        text-decoration: none;
+        padding-top: 3rem;
+        transition: 0.3s ease;
+      }
+      
+      /* for the banner */
+      .banner__image{
+        width: auto;
+        height: 100%;
+        max-height: 100vh;
+        max-width: 100%;
+        display: block;
+      }
+      
+      .banner__items {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        font-size: 1em;
+        padding: 0.3em 1em 0.3em 1em;
+        width: fit-content;
+      }
+      .banner__item--top {
+        margin-left: 5rem;
+        margin-top: 9rem;
+        border-left: 0.4em solid #186AA2;
+        margin-bottom: 0.5rem;
+        padding: 0.5em;
+        background-color: white;
+      }
+      .banner__item--middle {
+        border-left: 0.4em solid #DE6262;
+        margin-left: 5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5em;
+        background-color: white;
+      }
+      .banner__item--bottom{
+        border-left: 0.4em solid #FFB901;
+        margin-left: 5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5em;
+        background-color: white;
+      }
+}
     
     /* ==========================================================================
         Media Query for Desktop
        ========================================================================== */
     
-       @media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64em) {
         /* Style adjustments for viewports that meet the condition */
 
-        /* for the banner */
+  /* for the banner */
 
         .banner {
           background: #EBEBEB;
@@ -200,91 +533,69 @@
           padding: 1em;
           background-color: white;
         }
-        
-      }
-  
-/* Styling for whole website! */
+      
+/*==================================
+    Body Styles - Alyssa
+  ==================================*/
 
-/* company logo positioning */
-.company__logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* make nav bar change colour when hovering */
-.nav__item a:hover {
-  background-color: #F0F08C;
-  color: #0057C2;
-}
-
-/* nav colours */
-#nav__home {
-  background-color: #25C389;
-}
-
-
-#nav__portfolio{
-  background-color: #FFB901;
-}
-
-
-#nav__blog {
-  background-color: #DE6262;
-}
-
-
-#nav__quo{
-  background-color: #19B2DE;
-}
-
-
-#nav__chat {
-  background-color: #265787;
-}
-
-/* make nav arrow go invis when hover */
-.nav__arrow {
-  transition: opacity 0.3s ease; 
-  padding: 1rem;
-
-}
-
-.nav__arrow {
-  font-size: 1.3rem;
-}
-
-.nav__item a:hover .nav__arrow {
-  opacity: 0; 
-}
-
-
-/* delete this this is for my mental sanity while editing the header 
-main img, footer img {
-  width: 6px;
-}
-
-*/
-
-
-
-  
-  /*
-   * Hide only visually, but have it available for screen readers:
-   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-   */
-  
-  .visually-hidden {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    /* 1 */
+  /*====Services section====*/
+  .services__content {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  
+
+/*====News section====*/
+.page-news {
+  margin: 50px auto;
+}
+  .news__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    gap: 0px;
+  }
+  .news-item {
+    width: 320px;
+    height: 256px;
+    grid-column: span 1;
+  }
+  .news-priority {
+    grid-column: span 1;
+    width: 320px;
+    height: 256px;
+  }
+
+  /*====gallery section====*/
+  .gallery__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    gap: 0px;
+  }
+  .gallery__image {
+    width: 320px;
+    height: 256px;
+    grid-column: span 1;
+  }
+  .clients__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    gap: 0px;
+  }
+  .client__logo {
+    grid-column: span 1;
+  }      
+}
+
