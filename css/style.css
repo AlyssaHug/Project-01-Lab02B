@@ -307,43 +307,84 @@ max-width: 598px;
   /* ==========================================================================
       Media Query for Tablet
      ========================================================================== */
-   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       /* Style adjustments for viewports that meet the condition */
+
+      /* navbar stuff */
+      /* logo */
+      .company__logo{
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+        display: flex;
+      }
+      /* remove the list dots and makes if a flex */
+      .nav__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100vw; 
+        display: flex; 
+        justify-content: center; /* Centers navbar items horizontally */
+      }
       
-/* navbar stuff */
-/* logo */
-    .company__logo{
-      padding-top: 1rem;
-      margin-bottom: 1rem;
-      justify-content: center;
-      display: flex;
-    }
-    /* remove the list dots and makes if a flex */
-    .nav__list {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 100vw; 
-      display: flex; 
-      justify-content: center; /* Centers navbar items horizontally */
-    }
-
-    /* centers text and makes it grow and shrink */
-    .nav__item {
-      flex: 1; 
-      text-align: left; 
-    }
-
-    /*  is the inside content! (text) */
-    .nav__item a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 1rem 1rem;
-      text-decoration: none;
-      padding-top: 3rem;
-      transition: 0.3s ease;
-    }
+      /* centers text and makes it grow and shrink */
+      .nav__item {
+        flex: 1; 
+        text-align: left; 
+      }
+      
+      /*  is the inside content! (text) */
+      .nav__item a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1rem 1rem;
+        text-decoration: none;
+        padding-top: 3rem;
+        transition: 0.3s ease;
+      }
+      
+      /* for the banner */
+      .banner__image{
+        width: auto;
+        height: 100%;
+        max-height: 100vh;
+        max-width: 100%;
+        display: block;
+      }
+      
+      .banner__items {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        font-size: 1em;
+        padding: 0.3em 1em 0.3em 1em;
+        width: fit-content;
+      }
+      .banner__item--top {
+        margin-left: 5rem;
+        margin-top: 9rem;
+        border-left: 0.4em solid #186AA2;
+        margin-bottom: 0.5rem;
+        padding: 0.5em;
+        background-color: white;
+      }
+      .banner__item--middle {
+        border-left: 0.4em solid #DE6262;
+        margin-left: 5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5em;
+        background-color: white;
+      }
+      .banner__item--bottom{
+        border-left: 0.4em solid #FFB901;
+        margin-left: 5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5em;
+        background-color: white;
+      }
 }
     
     /* ==========================================================================
