@@ -36,10 +36,13 @@ footer{
   padding-bottom: 4px;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100vw;
+  max-width: 100%;
+  height: auto;
 }
 
 .flexbox_container{
+  display:flex;
+  flex-wrap: wrap;
   margin-left:2rem;
   margin-right:2rem;
 }
@@ -53,15 +56,23 @@ footer{
 
 .reviews__heading{
   color:#19B2DE;
-  font-family: Ubuntu;
 }
-  .user{
-    color: #1BADE6;
-    text-align: justify;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-  }
+
+.about__heading{
+  color: #FFB901;
+}
+
+.instagram__heading{
+  color:  #DE6262;
+}
+
+.user{
+  color: #1BADE6;
+  text-align: justify;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+}
 
 .track__square{
   display: flex; 
@@ -104,6 +115,9 @@ footer{
   height: 32px;
   border-radius: 5%;
   margin-right: 0.44rem;
+}
+.colors{
+  margin-bottom:0;
 }
 
 /*mobile phone screen style*/
@@ -162,15 +176,6 @@ footer{
     flex-shrink: 0;
     order:-1;
     margin-left:21rem;
-  }
-
-  .colors{
-    width: 25rem;
-    height: 1.0625rem;
-    flex-shrink: 0;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:0;
   }
 
   .review{
@@ -241,7 +246,6 @@ footer{
   footer{
     flex-direction: column;
     flex-wrap: wrap;
-    margin:auto;
   }
 
   .flexbox_container{
@@ -249,11 +253,9 @@ footer{
     flex-direction:row;
     justify-content:space-around;
     align-items: flex-start;
-    width:100vw;
-    margin-left:14rem;
-    margin-right:14rem;
+    margin-left:6rem;
+    margin-right:6rem;
     gap:2rem;
-    
   }
 
   /*director section style*/
@@ -265,38 +267,36 @@ footer{
     align-items: center;
     gap: 2rem;
     flex-basis: 100%;
-    border-bottom: 2px solid #FFC107;
     }
 
 
+  .about, .instagram, .reviews, .track{
+    flex:1;
+  }
+
   .about{
-    flex:1;
+    height: 15.375rem;
+    align-self: stretch;
   }
 
-  /*.instagram section style*/
-
-  .instagram{
-    flex:1;
+  .about__text{
+    width:20rem;
   }
 
-
-  /*reviews section style*/
-  .reviews{
-    flex:2
+  .reviews__comment{
+    width: 30rem;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
   }
 
-
-  /*track section style*/
-  .track{
-    flex:1;
-  }
-
+ 
   .track__square{
     display:flex;
+    flex-direction: row;
     width: 9rem;
     height: 5.125rem;
     align-items: flex-start;
-    align-content: flex-start;
     gap: 0.3125rem;
     flex-shrink: 0;
     flex-wrap: wrap;
