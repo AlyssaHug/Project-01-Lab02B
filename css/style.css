@@ -252,6 +252,48 @@
     gap: 10px;
   }
 
+/* for the banner */
+.banner__image{
+  width: auto;
+  height: 100%;
+  max-height: 100vh;
+  max-width: 100%;
+  display: block;
+}
+
+.banner__items {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 1em;
+  padding: 0.3em 1em 0.3em 1em;
+  width: fit-content;
+  margin-left: 5vw;
+  margin-right: 50vw;
+}
+.banner__item--top {
+  margin-left: 5rem;
+  margin-top: 9rem;
+  border-left: 0.4em solid #186AA2;
+  margin-bottom: 0.5rem;
+  padding: 0.5em;
+  background-color: white;
+}
+.banner__item--middle {
+  border-left: 0.4em solid #DE6262;
+  margin-left: 5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5em;
+  background-color: white;
+}
+.banner__item--bottom{
+  border-left: 0.4em solid #FFB901;
+  margin-left: 5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5em;
+  background-color: white;
+}
 
   /*====Gallery Section====*/
 
@@ -285,7 +327,6 @@
   .services__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
   }
     .service__item {
       display: flex;
@@ -441,37 +482,57 @@ max-width: 598px;
     
 @media only screen and (min-width: 64em) {
         /* Style adjustments for viewports that meet the condition */
-      
-  
-      /* Styling for whole website! */
 
-      /* company logo positioning */
-      .company__logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
+  /* for the banner */
 
-      /* make nav bar change colour when hovering */
-      .nav__item a:hover {
-        background-color: #F0F08C;
-        color: #0057C2;
-      }
+        .banner {
+          background: #EBEBEB;
+          padding-top: 2em;
+          position: relative;
+        }
+        
+        .banner__image{
+          width: auto;
+          height: 100%;
+          max-height: 100vh;
+          display: block;
+          margin: 0 auto;
+        }
 
-      /* nav colours */
-      #nav__home {
-        background-color: #25C389;
-      }
+        .banner__items {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          font-size: 1.2em;
+          padding: 0.3em 1em 0.3em 1em;
+          width: fit-content;
+          margin-left: 15vw;
+          margin-right: 50vw;
+        }
 
-
-      #nav__portfolio{
-        background-color: #FFB901;
-      }
-
-
-      #nav__blog {
-        background-color: #DE6262;
-      }
+        .banner__item--top {
+          margin-left: 5rem;
+          margin-top: 9rem;
+          border-left: 0.4em solid #186AA2;
+          margin-bottom: 1rem;
+          padding: 1em;
+          background-color: white;
+        }
+        .banner__item--middle {
+          border-left: 0.4em solid #DE6262;
+          margin-left: 5rem;
+          margin-bottom: 1rem;
+          padding: 1em;
+          background-color: white;
+        }
+        .banner__item--bottom{
+          border-left: 0.4em solid #FFB901;
+          margin-left: 5rem;
+          margin-bottom: 1rem;
+          padding: 1em;
+          background-color: white;
+        }
       
 /*==================================
     Body Styles - Alyssa
