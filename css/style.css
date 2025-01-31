@@ -22,7 +22,6 @@
     margin: 1em 0;
     padding: 0;
   }
-
 /*==================================
     Body Styles - Alyssa
   ==================================*/
@@ -135,87 +134,69 @@
      
   @media screen and (max-width: 39.9375em){
 
-    /* Top Banner Hide when Screen Smaller */
-    .banner, .column,
-    [hidden] {
-      display: none !important;
+   /*==================================
+    Body Styles - Alyssa
+  ==================================*/
+
+  /*====Page Title====*/
+
+  .page__intro {
+    padding: 5rem 2rem 2rem;
+  }
+       /*==service items==*/
+
+  .service__text {
+    flex: 1;
+  }
+      .service__header {
+        margin: auto auto 5px 5px;
+      }
+      .service__desc {
+        margin: auto 80px 5px 5px;
+      }
+  .page-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .service__icon {
+    display: flex;
+    
+  }
+
+  .service__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .services__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+
+  /*====Gallery Section====*/
+
+  .page-gallery {
+    margin: 50px auto;
+  }
+    /*==Gallery content==*/
+    .gallery__content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
     }
-
-    /* make logo shift */
-    .company__logo{
-    position: absolute;
-    display: block;
-    }
-
-    .page__intro {
-      font-weight: lighter;
-      text-align: center;
-      font-size: 34px;
-      padding: 5rem 2rem 2rem 2rem;
-    }
-      /*==================================
-          Body Styles - Alyssa
-        ==================================*/
-
-        /*====Page Title====*/
-
-        .page__intro {
-          padding: 5rem 2rem 2rem;
-        }
-            /*==service items==*/
-
-        .service__text {
-          flex: 1;
-        }
-            .service__header {
-              margin: auto auto 5px 5px;
-            }
-            .service__desc {
-              margin: auto 80px 5px 5px;
-            }
-        .page-services{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: flex-start;
-        }
-        .service__icon {
-          display: flex;
-          
-        }
-
-        .service__item{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .services__content {
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-template-rows: auto;
-          align-items: center;
-          margin: 0 auto;
-          gap: 10px;
-        }
-
-
-        /*====Gallery Section====*/
-
-        .page-gallery {
-          margin: 50px auto;
-        }
-          /*==Gallery content==*/
-          .gallery__content {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-
-          }
-        /*====Clients section====*/
-        .page-clients,
-        [hidden] {
-          display: none !important;
-        }
+  /*====Clients section====*/
+  .page-clients,
+  [hidden] {
+    display: none !important;
+  }
 
   }
 
@@ -225,78 +206,79 @@
      ========================================================================== */
    @media screen and (min-width: 40em) {
       /* Style adjustments for viewports that meet the condition */
-      /*==================================
+  /*==================================
     Body Styles - Alyssa
   ==================================*/
 
   /*====Services section====*/
-    .services__content {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      
-    }
-      .service__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    .service__icon {
-      margin-bottom: 10px;
-    }
-    .service__header {
-      text-align: center;
-    }
-
-  /*====News section====*/
-  .news__content {
+  .services__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    align-items: center;
-    gap: 10px;
-    margin: 0 auto;
-    max-width: 600px;
+    
   }
-  .news-item {
-    width: 292px;
-    height: 256px;
+    .service__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .service__icon {
+    margin-bottom: 10px;
   }
-  .news-priority {
-    flex-grow: 2;
-    grid-column: span 2;
-    width: 600px;
-    height: 360px;
+  .service__header {
+    text-align: center;
   }
-  article .news__picture {
-    width: 600px;
-    height: 360px;
-  }
+
+/*====News section====*/
+.news__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.news-item {
+  width: 292px;
+  height: 256px;
+}
+.news-priority {
+  flex-grow: 2;
+  grid-column: span 2;
+  width: 600px;
+  height: 360px;
+}
+article .news__picture {
+  width: 600px;
+  height: 360px;
+}
 .news__info {
-  max-width: 598px;
+max-width: 598px;
 }
 
-  /*====Gallery section====*/
-  .gallery__content {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
-    margin: 0 auto;
-    max-width: 600px;
-  }
-  .gallery__image{
-    width: 292px;
-    height: 256px;
-  }
-  /*====Clients section====*/
-  .clients__content{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  .logo__image {
-    width: 190px;
-    height: 128px;
-  }
+/*====Gallery section====*/
+.gallery__content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  margin: 0 auto;
+  max-width: 600px;
+}
+.gallery__image{
+  width: 292px;
+  height: 256px;
+}
+/*====Clients section====*/
+.clients__content{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  max-width: 600px;
+  margin: 0 auto;
+}
+.logo__image {
+  width: 190px;
+  height: 128px;
+}
+
 
   }
 
@@ -307,176 +289,70 @@
    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       /* Style adjustments for viewports that meet the condition */
       
-/* navbar stuff */
-/* logo */
-    .company__logo{
-      padding-top: 1rem;
-      margin-bottom: 1rem;
-      justify-content: center;
-      display: flex;
-    }
-    /* remove the list dots and makes if a flex */
-    .nav__list {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 100vw; 
-      display: flex; 
-      justify-content: center; /* Centers navbar items horizontally */
-    }
-
-    /* centers text and makes it grow and shrink */
-    .nav__item {
-      flex: 1; 
-      text-align: left; 
-    }
-
-    /*  is the inside content! (text) */
-    .nav__item a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 1rem 1rem;
-      text-decoration: none;
-      padding-top: 3rem;
-      transition: 0.3s ease;
-    }
-
-
-}
-    
-    /* ==========================================================================
-        Media Query for Desktop
-       ========================================================================== */
-    
-@media only screen and (min-width: 64em) {
-        /* Style adjustments for viewports that meet the condition */
-      
-  
-      /* Styling for whole website! */
-
-      /* company logo positioning */
-      .company__logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      /* make nav bar change colour when hovering */
-      .nav__item a:hover {
-        background-color: #F0F08C;
-        color: #0057C2;
-      }
-
-      /* nav colours */
-      #nav__home {
-        background-color: #25C389;
-      }
-
-
-      #nav__portfolio{
-        background-color: #FFB901;
-      }
-
-
-      #nav__blog {
-        background-color: #DE6262;
-      }
-
-
-      #nav__quo{
-        background-color: #19B2DE;
-      }
-
-
-      #nav__chat {
-        background-color: #265787;
-      }
-
-      /* make nav arrow go invis when hover */
-      .nav__arrow {
-        transition: opacity 0.3s ease; 
-        padding: 1rem;
-
-      }
-
-      .nav__arrow {
-        font-size: 1.3rem;
-      }
-
-      .nav__item a:hover .nav__arrow {
-        opacity: 0; 
-      }
-
-
-      /* delete this this is for my mental sanity while editing the header */
-      main img, footer img {
-        width: 6px;
-      }
-  /*==================================
+/*==================================
     Body Styles - Alyssa
   ==================================*/
 
   /*====Services section====*/
-    .services__content {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-  /*====News section====*/
-  .page-news {
-    margin: 50px auto;
+  .services__content {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
   }
-    .news__content {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto;
-      align-items: center;
-      margin: 0 auto;
-      max-width: 1024px;
-      gap: 0px;
-    }
-    .news-item {
-      width: 320px;
-      height: 256px;
-      grid-column: span 1;
-    }
-    .news-priority {
-      grid-column: span 1;
-      width: 320px;
-      height: 256px;
-    }
 
-    /*====gallery section====*/
-    .gallery__content {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto;
-      align-items: center;
-      margin: 0 auto;
-      max-width: 1024px;
-      gap: 0px;
-    }
-    .gallery__image {
-      width: 320px;
-      height: 256px;
-      grid-column: span 1;
-    }
-    .clients__content {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: auto;
-      align-items: center;
-      margin: 0 auto;
-      max-width: 1024px;
-      gap: 0px;
-    }
-    .client__logo {
-      grid-column: span 1;
-    }
-  
+/*====News section====*/
+.page-news {
+  margin: 50px auto;
+}
+  .news__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    gap: 0px;
+  }
+  .news-item {
+    width: 320px;
+    height: 256px;
+    grid-column: span 1;
+  }
+  .news-priority {
+    grid-column: span 1;
+    width: 320px;
+    height: 256px;
+  }
+
+  /*====gallery section====*/
+  .gallery__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    gap: 0px;
+  }
+  .gallery__image {
+    width: 320px;
+    height: 256px;
+    grid-column: span 1;
+  }
+  .clients__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    gap: 0px;
+  }
+  .client__logo {
+    grid-column: span 1;
+  }
+
 }
 
   
