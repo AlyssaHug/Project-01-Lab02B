@@ -155,7 +155,83 @@
       font-size: 34px;
       padding: 5rem 2rem 2rem 2rem;
     }
-  /*==================================
+     /* ==========================================================================
+     Base Mobile Screen
+     ========================================================================== */
+
+  @media screen and (max-width: 39.9375em){
+
+   /*==================================
+    Body Styles - Alyssa
+  ==================================*/
+
+  /*====Page Title====*/
+
+  .page__intro {
+    padding: 5rem 2rem 2rem;
+  }
+       /*==service items==*/
+
+  .service__text {
+    flex: 1;
+  }
+      .service__header {
+        margin: auto auto 5px 5px;
+      }
+      .service__desc {
+        margin: auto 80px 5px 5px;
+      }
+  .page-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .service__icon {
+    display: flex;
+
+  }
+
+  .service__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .services__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+
+  /*====Gallery Section====*/
+
+  .page-gallery {
+    margin: 50px auto;
+  }
+    /*==Gallery content==*/
+    .gallery__content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+  /*====Clients section====*/
+  .page-clients,
+  [hidden] {
+    display: none !important;
+  }
+
+  }
+
+   /* ==========================================================================
+      Media Query for Tablet
+     ========================================================================== */
+   @media screen and (min-width: 40em) {
+ /*==================================
     Body Styles - Alyssa
   ==================================*/
 
@@ -228,9 +304,7 @@ max-width: 598px;
   height: 128px;
 }
 
-
-  }
-
+}
 
   /* ==========================================================================
       Media Query for Tablet
@@ -272,8 +346,6 @@ max-width: 598px;
       padding-top: 3rem;
       transition: 0.3s ease;
     }
-
-
 }
     
     /* ==========================================================================
