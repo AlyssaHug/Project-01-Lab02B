@@ -136,26 +136,42 @@ footer{
   gap: 0.44rem;
 }
 
+.email_button{
+  width: 143px;
+  display: flex;
+  height: 2rem;
+}
+
 .track__email{
   background-color:#DE6262;
-  color: #fff;
-  width: 11rem;
-  height: 2rem;
+  color:white;
+  width: 9rem;
+  height:auto;
+  margin-right: 0;
   flex-shrink: 0;
-  gap:0;
+  padding:0;
+  border: none;
 }
 
 button{
   background-color:#FFB901;; 
   width: 3rem;
-  height: 2rem;
   flex-shrink: 0;
-  gap:0;
-  float:right;
+  margin:0;
+  position: relative;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
 }
 
 ::placeholder{
   color: white;
+  padding-left: 5px;
+}
+
+input{
+  border-radius: 5px 0 0 5px;
 }
 
 .colors{
@@ -164,10 +180,6 @@ button{
   margin-bottom:0;
 }
 
-
-.newsletter__form{
-  
-}
 /*mobile phone screen style*/
 @media screen and (max-width: 39.9375em){
   /* About us and instagram section hidden in mobile size */
@@ -323,10 +335,6 @@ button{
     gap: 0.3125rem;
     flex-shrink: 0;
     flex-wrap: wrap;
-  }
-
-  .colors{
-    
   }
 
 }
