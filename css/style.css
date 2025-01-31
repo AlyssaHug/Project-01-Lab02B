@@ -113,6 +113,8 @@
   font-size: 1em;
   padding: 0.3em 1em 0.3em 1em;
   width: fit-content;
+  margin-left: 5vw;
+  margin-right: 50vw;
 }
 .banner__item--top {
   margin-left: 5rem;
@@ -153,6 +155,7 @@
         .banner {
           background: #EBEBEB;
           padding-top: 2em;
+          position: relative;
         }
         
         .banner__image{
@@ -161,21 +164,21 @@
           max-height: 100vh;
           display: block;
           margin: 0 auto;
-          position: relative;
         }
 
         .banner__items {
+          position: absolute;
           display: flex;
           flex-direction: column;
           padding: 1rem;
           font-size: 1.2em;
           padding: 0.3em 1em 0.3em 1em;
           width: fit-content;
-          margin-left: 20rem;
+          margin-left: 15vw;
+          margin-right: 50vw;
         }
 
         .banner__item--top {
-          position:absolute;
           margin-left: 5rem;
           margin-top: 9rem;
           border-left: 0.4em solid #186AA2;
