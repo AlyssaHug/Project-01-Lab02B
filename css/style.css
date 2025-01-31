@@ -66,11 +66,6 @@
     .nav__item a:hover .nav__arrow {
       opacity: 0; 
     }
-    /* delete this this is for my mental sanity while editing the header 
-    main img, footer img {
-      width: 6px;
-    }
-    */
 /*==================================
     Body Styles - Alyssa
   ==================================*/
@@ -179,7 +174,165 @@
         height: 16rem;
         align-self: center;
       }
+/*====================
+Sandy's footer section
+======================*/
 
+/*=================================
+General footer style
+=================================*/
+
+footer{
+  background-color: #0E2E4E;
+  color:#fff;
+  display:flex;
+  padding:4px 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+}
+
+.flexbox_container{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.director__image{
+  width: 10.64794rem;
+  height: 9.20781rem;
+  flex-shrink: 0;
+  border-radius: 100%;
+}
+
+.profile__line{
+  width: 15rem;
+  height: 0.3rem;
+  background-color: #FFB901;
+  margin-bottom: 4rem;
+  margin-top:0;
+}
+
+.reviews__heading{
+  color:#19B2DE;
+  border-bottom: 1px solid #FFB901;
+  display:inline-block;
+}
+
+.about__heading{
+  color: #FFB901;
+  border-bottom: 1px solid #21c183;
+}
+
+.instagram__heading{
+  color:  #DE6262;
+  border-bottom: 1px solid #19B2DE;
+}
+
+.track__heading{
+  border-bottom: 1px solid #19B2DE;
+}
+
+.user{
+  color: #1BADE6;
+  text-align: justify;
+  font-family:'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.track__square{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.track__square--purple{
+  background-color:#527CC4;
+  width: 32px;
+  height: 32px;
+  border-radius: 5%;
+  gap: 0.44rem;
+}
+
+.track__square--red{
+  background-color:#E46145;
+  width: 32px;
+  height: 32px;
+  border-radius: 5%;
+  gap: 0.44rem;
+}
+
+.track__square--blue{
+  background-color:#00B0E2;
+  width: 32px;
+  height: 32px;
+  border-radius: 5%;
+  gap: 0.44rem;
+}
+
+.track__square--pink{
+  background-color:#F6679C;
+  width: 32px;
+  height: 32px;
+  border-radius: 5%;
+  gap: 0.44rem;
+}
+
+.track__square--yellow{
+  background-color:#FFB901;
+  width: 32px;
+  height: 32px;
+  border-radius: 5%;
+  gap: 0.44rem;
+}
+
+.email_button{
+  width: 143px;
+  display: flex;
+  height: 2rem;
+}
+
+.track__email{
+  background-color:#DE6262;
+  color:white;
+  width: 9rem;
+  height:auto;
+  margin-right: 0;
+  flex-shrink: 0;
+  padding:0;
+  border: none;
+}
+
+button{
+  background-color:#FFB901;; 
+  width: 3rem;
+  flex-shrink: 0;
+  margin:0;
+  position: relative;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+::placeholder{
+  color: white;
+  padding-left: 5px;
+}
+
+input{
+  border-radius: 5px 0 0 5px;
+}
+
+.colors{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom:0;
+}
 
 
   /* ==========================================================================
@@ -206,6 +359,8 @@
       font-size: 34px;
       padding: 5rem 2rem 2rem 2rem;
     }
+
+
 
    /*==================================
     Body Styles - Alyssa
@@ -252,49 +407,6 @@
     gap: 10px;
   }
 
-/* for the banner */
-.banner__image{
-  width: auto;
-  height: 100%;
-  max-height: 100vh;
-  max-width: 100%;
-  display: block;
-}
-
-.banner__items {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  font-size: 1em;
-  padding: 0.3em 1em 0.3em 1em;
-  width: fit-content;
-  margin-left: 5vw;
-  margin-right: 50vw;
-}
-.banner__item--top {
-  margin-left: 5rem;
-  margin-top: 9rem;
-  border-left: 0.4em solid #186AA2;
-  margin-bottom: 0.5rem;
-  padding: 0.5em;
-  background-color: white;
-}
-.banner__item--middle {
-  border-left: 0.4em solid #DE6262;
-  margin-left: 5rem;
-  margin-bottom: 0.5rem;
-  padding: 0.5em;
-  background-color: white;
-}
-.banner__item--bottom{
-  border-left: 0.4em solid #FFB901;
-  margin-left: 5rem;
-  margin-bottom: 0.5rem;
-  padding: 0.5em;
-  background-color: white;
-}
-
   /*====Gallery Section====*/
 
   .page-gallery {
@@ -311,6 +423,95 @@
   .page-clients,
   [hidden] {
     display: none !important;
+  }
+    /*====Sandy Footer====*/
+     /* About us and instagram section hidden in mobile size */
+  .about, .instagram,
+  [hidden] {
+    display: none !important;
+  }
+
+  .flexbox_container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .director__info{
+    display: flex;
+    align-items: flex-start;
+    margin: 2rem;
+    gap: 2rem;
+    order:-2;
+    width: 27rem;
+    height: 11.375rem;
+    flex-shrink: 0;
+  }
+
+  .director__caption{
+    margin-left:0.47rem;
+    margin-right:1rem;
+    flex-shrink: 0;
+  }
+
+  .director__image{
+    width: 8.66275rem;
+    height: 7.49113rem;
+    margin-top:0;
+    flex-shrink: 0;
+  }
+
+  .director__caption{
+    width: 20rem;
+    height:auto;
+    flex-shrink: 0;
+    font-size:0.75rem;
+  }
+
+  .track{
+    display:flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 11rem;
+    flex-shrink: 0;
+    order:-1;
+  }
+
+  .review{
+    display: flex;
+    width: 24.6875rem;
+    height: 20.875rem;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    margin: auto;
+  }
+
+  .reviews__heading{
+    font-size: 0.9375rem;
+    font-weight: 500;
+  }
+
+  .user{
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.875rem;
+  }
+  
+  .reviews__content{
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.875rem;
+  }
+
+  .reviews__comment{
+    align-self: stretch;
+    width:24.6875rem;
+    height:5.25rem;
   }
 
   }
@@ -597,5 +798,62 @@ max-width: 598px;
   .client__logo {
     grid-column: span 1;
   }      
-}
 
+/*==Sandy Footer====*/
+
+  .flexbox_container{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: flex-start;
+    margin-left:6rem;
+    margin-right:6rem;
+    gap:2rem;
+  }
+
+  .director__info{
+    display: flex;
+    max-width: 70%;
+    margin-left: 10rem;
+    padding: 2rem 2rem 0 2rem;
+    align-items: center;
+    gap: 2rem;
+    }
+
+
+  .about, .instagram, .track{
+    flex:1;
+  }
+
+  .reviews{
+    flex:2;
+  }
+
+  .about{
+    height: 15.375rem;
+    align-self: stretch;
+  }
+
+  .about__text{
+    width:20rem;
+  }
+
+  .reviews__comment{
+    width: 30rem;
+    flex-direction:column;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+
+  .track__square{
+    display:flex;
+    flex-direction: row;
+    width: 9rem;
+    height: 5.125rem;
+    align-items: flex-start;
+    gap: 0.3125rem;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+
+}
