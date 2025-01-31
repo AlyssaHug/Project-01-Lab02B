@@ -20,9 +20,14 @@ html {
   padding: 0;
 }
 
-/*Sandy's footer section*/
+/*====================
+Sandy's footer section
+======================*/
 
-/*General footer style*/
+/*=================================
+General footer style
+=================================*/
+
 footer{
   background-color: #0E2E4E;
   color:#fff;
@@ -35,7 +40,8 @@ footer{
 }
 
 .flexbox_container{
-  margin:2rem;
+  margin-left:2rem;
+  margin-right:2rem;
 }
 
 .director__image{
@@ -66,7 +72,7 @@ footer{
   background-color:#527CC4;
   width: 32px;
   height: 32px;
-  border-radius: 10%;
+  border-radius: 5%;
   margin-right: 0.44rem;
 }
 
@@ -74,7 +80,7 @@ footer{
   background-color:#E46145;
   width: 32px;
   height: 32px;
-  border-radius: 10%;
+  border-radius: 5%;
   margin-right: 0.44rem;
 }
 
@@ -82,21 +88,21 @@ footer{
   background-color:#00B0E2;
   width: 32px;
   height: 32px;
-  border-radius: 10%;
+  border-radius: 5%;
   margin-right: 0.44rem;
 }
 .track__square--pink{
   background-color:#F6679C;
   width: 32px;
   height: 32px;
-  border-radius: 10%;
+  border-radius: 5%;
   margin-right: 0.44rem;
 }
 .track__square--yellow{
   background-color:#FFB901;
   width: 32px;
   height: 32px;
-  border-radius: 10%;
+  border-radius: 5%;
   margin-right: 0.44rem;
 }
 
@@ -109,7 +115,7 @@ footer{
   }
 
   footer{
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .flexbox_container{
@@ -120,22 +126,24 @@ footer{
   .director__info{
     display: flex;
     align-items: flex-start;
-    width: 26rem;
     margin: 2rem;
     gap: 2rem;
     order:-2;
+    width: 27rem;
+    height: 11.375rem;
+    flex-shrink: 0;
   }
 
   .director__caption{
-    width:16rem;
-    height:9rem;
     margin-left:0.47rem;
     margin-right:1rem;
+    flex-shrink: 0;
   }
 
   .director__image{
     width: 8.66275rem;
     height: 7.49113rem;
+    margin-top:0;
     flex-shrink: 0;
   }
 
@@ -230,34 +238,68 @@ footer{
 /*desktop screen style*/
 @media only screen and (min-width: 64em){
 
-/*director section style*/
-
-.director__info{
-  display: flex;
-  width: 47.5rem;
-  padding: 2rem;
-  align-items: center;
-  gap: 2rem;
+  footer{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:auto;
   }
 
-/*.instagram section style*/
+  .flexbox_container{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: flex-start;
+    width:100vw;
+    margin-left:14rem;
+    margin-right:14rem;
+    gap:2rem;
+    
+  }
+
+  /*director section style*/
+
+  .director__info{
+    display: flex;
+    max-width: 100%;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+    flex-basis: 100%;
+    border-bottom: 2px solid #FFC107;
+    }
 
 
+  .about{
+    flex:1;
+  }
 
-/*reviews section style*/
+  /*.instagram section style*/
+
+  .instagram{
+    flex:1;
+  }
 
 
-/*track section style*/
+  /*reviews section style*/
+  .reviews{
+    flex:2
+  }
 
-.track__square{
-  display:flex;
-  width: 9rem;
-  height: 5.125rem;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 0.3125rem;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-}
+
+  /*track section style*/
+  .track{
+    flex:1;
+  }
+
+  .track__square{
+    display:flex;
+    width: 9rem;
+    height: 5.125rem;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 0.3125rem;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
 
 }
