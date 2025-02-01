@@ -423,10 +423,10 @@ input{
     "director"
     "track"
     "reviews";
-    gap: 2rem;
   }
   .director{
     grid-area: director;
+    margin-bottom: 0;
   }
   .director__info{
     display: flex;
@@ -450,11 +450,13 @@ input{
   }
   .profile__line {
     margin-left: 38%;
+    margin-bottom: 5%;
   }
   .track{
     width: 15rem;
     height: 11rem;
     grid-area: track;
+    margin: 0 15% 0 auto;
   }
 
   .reviews{
@@ -492,9 +494,11 @@ input{
     width:24.6875rem;
     height:5.25rem;
   }
-
+  .colors {
+    margin-left: auto;
+    margin-right: auto;
   }
-
+  }
    /* ==========================================================================
       Media Query for Tablet
      ========================================================================== */
