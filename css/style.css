@@ -1,13 +1,12 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-testing
-   html {
-    color: #3B3B3B;
-    font-size: 1em;
-    line-height: 1.4;
-    font-family: 'Ubuntu';
-  }
+html {
+  color: #3B3B3B;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Ubuntu";
+}
   /*
    * A better looking default horizontal rule
    */
@@ -231,13 +230,13 @@ footer{
   border-bottom: 1px solid #19B2DE;
 }
 
-.user{
-  color: #1BADE6;
-  text-align: justify;
-  font-family:'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-}
+    .user{
+      color: #1BADE6;
+      text-align: justify;
+      font-family:'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+    }
 
 .track__square{
   display: flex;
@@ -496,14 +495,14 @@ input{
     line-height: 0.875rem;
   }
   
-  .reviews__content{
-    color: #FFF;
-    font-family: "Open Sans";
-    font-size: 0.5625rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 0.875rem;
-  }
+    .reviews__content{
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 0.5625rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 0.875rem;
+    }
 
   .reviews__comment{
     align-self: stretch;
