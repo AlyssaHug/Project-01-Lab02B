@@ -365,9 +365,7 @@ input{
       .service__header {
         margin: auto auto 5px 5px;
       }
-      .service__desc {
-        margin: auto 80px 5px 5px;
-      }
+
   .page-services{
     display: flex;
     flex-direction: column;
@@ -507,8 +505,14 @@ input{
  /*==================================
     Body Styles - Alyssa
   ==================================*/
-
+    .page__intro {
+      margin: 10% 2%;
+    }
   /*====Services section====*/
+  .page-services {
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
   .services__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -517,12 +521,16 @@ input{
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 10% auto;
     }
   .service__icon {
     margin-bottom: 10px;
   }
   .service__header {
     text-align: center;
+  }
+  .service__desc {
+    margin: auto 5%;
   }
 
 /*====News section====*/
