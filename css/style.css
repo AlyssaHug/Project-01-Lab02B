@@ -144,7 +144,7 @@ html {
         left: 0;
         padding: 1px;
         width: 100%;
-        height: 20%;
+        height: 15%;
         display: flex;
         flex-direction: column;
       }
@@ -560,6 +560,9 @@ article .news__picture {
 .news__info {
 max-width: 598px;
 }
+.news-item .news__info {
+  height: 20%;
+}
 
 /*====Gallery section====*/
 .gallery__content {
@@ -761,6 +764,9 @@ max-width: 598px;
     grid-column: span 1;
     width: 320px;
     height: 256px;
+  }
+  .news__info {
+    height: 20%;
   }
 
   /*====gallery section====*/
