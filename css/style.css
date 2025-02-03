@@ -706,7 +706,7 @@ max-width: 598px;
           flex-direction: column;
           padding: 1rem;
           font-size: 1.2em;
-          padding: 0.3em 1em 0.3em 1em;
+          padding: 1em 1em 0.3em 1em;
           width: fit-content;
           margin-left: 15vw;
           margin-right: 50vw;
@@ -734,6 +734,54 @@ max-width: 598px;
           padding: 1em;
           background-color: white;
         }
+
+        .page__header .row {
+          display: flex;
+          align-items: center; 
+          justify-content: flex-start; 
+          width: 100%;
+          padding: 0; 
+          margin: 0;
+        }
+        
+        /* Logo stays on the left */
+        .company__logo {
+          height: 2rem; 
+          width: auto;
+          margin-bottom: -5rem;
+          margin-right: 20rem; 
+        }
+        
+        .nav__list {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 52vw; 
+          display: flex;
+          transform: translateX(-15rem);
+        }
+        
+        /* centers text and makes it grow and shrink */
+        .nav__item {
+          flex: 1; 
+          text-align: left; 
+        }
+        
+        /*  is the inside content! (text) */
+        .nav__item a {
+          display: block;
+          color: white;
+          text-align: left;
+          text-decoration: none;
+          padding: 3vw 1rem;
+          transition: 0.3s ease;
+        }
+
+
+        
+     
+
+        
       
 /*==================================
     Body Styles - Alyssa
