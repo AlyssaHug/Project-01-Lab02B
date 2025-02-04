@@ -221,7 +221,7 @@ footer {
   width: 7rem;
   height: 0.3rem;
   background-color: #FFB901;
-  left:30.5rem;
+  left:25.5rem;
   top: 12rem;
 }
 
@@ -239,10 +239,26 @@ footer {
 .instagram__heading{
   color:  #DE6262;
   border-bottom: 1px solid #19B2DE;
+  position: relative;
+  left:0.5rem;
 }
 
 .track__heading{
   border-bottom: 1px solid #19B2DE;
+}
+
+.instagram{
+  margin-right: 2rem;
+}
+.instagram__content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 15rem;
+}
+.instagram__icon{
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .user{
@@ -907,14 +923,13 @@ Base Mobile Screen
       Sandy Footer
   ========================*/
 
-  /*tablet screen style*/
-@media only screen and (min-width: 40em){
-
-
-}
-
 /*desktop screen style*/
 @media only screen and (min-width: 64em){
+
+  .director__info{
+    position: relative;
+    left:-5rem;
+  }
 
   .flexbox_container{
     display: flex;
