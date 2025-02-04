@@ -74,10 +74,12 @@
       background: rgba(255, 255, 255, 0.8); 
 }
 
-    .nav__list span { 
-      font-family: 'Noto Sans';font-size: 1.5em;
+
+
+    .nav__arrow { 
+      font-family: 'Noto Sans';font-size: 1.2em;
       font-weight: 100;
-}   
+    } 
    
 
 /*==================================
