@@ -66,6 +66,13 @@
     .nav__item a:hover .nav__arrow {
       opacity: 0; 
     }
+
+    /* Make transparent banner text */
+    .banner__item--top:hover, .banner__item--middle:hover, .banner__item--bottom:hover {
+  background: rgba(255, 255, 255, 0.9); 
+}
+   
+
 /*==================================
     Body Styles - Alyssa
   ==================================*/
@@ -652,7 +659,10 @@ max-width: 598px;
         font-size: 1em;
         padding: 0.3em 1em 0.3em 1em;
         width: fit-content;
+        margin-left: 5vw;
+        margin-right: 50vw;
       }
+
       .banner__item--top {
         margin-left: 5rem;
         margin-top: 9rem;
@@ -674,7 +684,10 @@ max-width: 598px;
         margin-bottom: 0.5rem;
         padding: 0.5em;
         background-color: white;
+
+        
       }
+
 }
     
     /* ==========================================================================
@@ -779,11 +792,6 @@ max-width: 598px;
           transition: 0.3s ease;
         }
 
-
-        
-     
-
-        
       
 /*==================================
     Body Styles - Alyssa
