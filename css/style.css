@@ -73,6 +73,11 @@
     .banner__item--top:hover, .banner__item--middle:hover, .banner__item--bottom:hover {
       background: rgba(255, 255, 255, 0.8); 
 }
+
+    .nav__list span { 
+      font-family: 'Noto Sans';font-size: 1.5em;
+      font-weight: 100;
+}   
    
 
 /*==================================
