@@ -587,6 +587,10 @@ max-width: 598px;
 }
 
 /*====Clients section====*/
+.page-clients {
+  margin-top: 3rem;
+  margin-bottom: 65px; 
+}
 .clients__content{
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
