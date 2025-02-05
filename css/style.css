@@ -475,130 +475,125 @@ Base Mobile Screen
     [hidden] {
       display: none;
     }
-  /*====Clients section====*/
-    .page-clients
-    [hidden] {
-      display: none !important;
-    }
 /*======================
-    Sandy Footer
+   Sandy Footer
 ========================*/
+    /* About us and instagram section hidden in mobile size */
 
-     /* About us and instagram section hidden in mobile size */
-  .about, .instagram,
-  [hidden] {
-   display: none !important; 
-  }
-  .director {
-    width: fit-content;
-    margin: 0;
-  }
 
-  .director__info{
-    display: flex;
-    flex-direction: row;
-    margin-left:3rem;
-    margin-right: 3rem;
-    order:-2;
-  }
+ .about, .instagram,
+ [hidden] {
+   display: none !important;
+ }
 
-  .director__caption{
-    margin-top: 2rem;
-    width: 15rem;
-    height:auto;
-    font-size: 12px;
-    gap:2rem;
-  }
 
-  .profile__line{
-    position: relative;
-    top: -3rem;
-    left:15rem;
-  }
+ .flexbox_container{
+   display: flex;
+   flex-direction: column;
+ }
 
-  .director__image{
-    display: flex;
-    width: 8rem;
-    height: 7rem;
-    margin-top:0;
-    margin-right: 2rem;
-    position: relative;
-    top:1rem;
 
-  }
+ .director {
+   width: fit-content;
+   margin: 0;
+ }
 
-  .track__heading{
-    margin-right: 1rem;
-  }
-  .track{
-    display:flex;
-    flex-direction: column;
-    position: relative;
-    left:10rem;
-    top:-4rem;
-    width: 15rem;
-    height: 11rem;
-    order:-1;
-    flex:1;
-  }
 
-  .reviews{
-    display: flex;
-    flex-direction:column;
-    align-items:flex-start;
-    position: relative;
-    top:-5rem;
-    left:-6rem;
-    width: 15rem;
-    height: auto;
-    flex:2;
-  }
+ .director__info{
+   display: flex;
+   flex-direction: row;
+   margin-left:3rem;
+   margin-right: 3rem;
+   order:-2;
+ }
 
-  .reviews__content{
-    color: #FFF;
-    font-family: "Open Sans";
-    font-size: 0.8rem;
-    font-style:normal;
-    font-weight: 300;
-    line-height: 1rem;
-  }
 
-  .reviews__heading{
-    font-size: 0.9375rem;
-    font-weight: 500;
-  }
+ .director__caption{
+   margin-top: 2rem;
+   width: 15rem;
+   height:auto;
+   font-size: 12px;
+   gap:2rem;
+ }
 
-  .user{
-    font-size: 0.5625rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 0.875rem;
-  }
-  
-    .reviews__content{
-      color: #FFF;
-      font-family: "Open Sans";
-      font-size: 0.5625rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 0.875rem;
-    }
 
-  .reviews__comment{
-    width: 28rem;
-    flex-direction:column;
-    align-items: flex-start;
-    flex-shrink: 0;
-  }
+ .profile__line{
+   position: relative;
+   top: -3rem;
+   left:15rem;
+ }
 
-  .track__square{
-    display:flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 0.3125rem;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-  }
+
+ .director__image{
+   display: flex;
+   width: 8rem;
+   height: 7rem;
+   margin-top:0;
+   margin-right: 2rem;
+   position: relative;
+   top:1rem;
+
+
+ }
+
+
+ .track__heading{
+   margin-right: 1rem;
+ }
+
+
+ .track{
+   display:flex;
+   flex-direction: column;
+   position: relative;
+   left:10rem;
+   top:-4rem;
+   width: 15rem;
+   height: 11rem;
+   order:-1;
+   flex:1;
+ }
+
+
+ .reviews{
+   display: flex;
+   flex-direction:column;
+   align-items:flex-start;
+   position: relative;
+   top:-5rem;
+   left:-6rem;
+   width: 15rem;
+   height: auto;
+   flex:2;
+ }
+
+
+ .reviews__content{
+   color: #FFF;
+   font-family: "Open Sans";
+   font-size: 0.8rem;
+   font-style:normal;
+   font-weight: 300;
+   line-height: 1rem;
+ }
+
+
+ .reviews__comment{
+   width: 28rem;
+   flex-direction:column;
+   align-items: flex-start;
+   flex-shrink: 0;
+ }
+
+
+ .track__square{
+   display:flex;
+   flex-direction: row;
+   align-items: flex-start;
+   gap: 0.3125rem;
+   flex-shrink: 0;
+   flex-wrap: wrap;
+ }
 }
 
    /* ==========================================================================
@@ -800,86 +795,95 @@ Base Mobile Screen
       [hidden] {
         display: none;
       }
-  /*======================
+===================
 Sandy Footer TABLET!
 ========================*/
 .flexbox_container{
-  display: flex;
-  flex-direction:row;
-  justify-content:flex-start;
-  margin-left:3rem;
-  margin-right:3rem;
-  gap:2rem;
+ display: flex;
+ flex-direction:row;
+ justify-content:flex-start;
+ margin-left:3rem;
+ margin-right:3rem;
+ gap:2rem;
 }
+
 
 .director {
-  width: fit-content;
-  margin: 0;
+ width: fit-content;
+ margin: 0;
 }
-  
-.director__image{
-  position: relative;
-  top:-1rem;
-  left:1rem;
+ .director__image{
+ position: relative;
+ top:-1rem;
+ left:1rem;
 }
+
 
 .director__info{
-  display: flex;
-  flex-direction: row;
-  margin-left:3rem;
-  margin-right: 3rem;
-  margin-top:3rem;
-  }
+ display: flex;
+ flex-direction: row;
+ margin-left:3rem;
+ margin-right: 3rem;
+ margin-top:3rem;
+ }
 
-  .director__caption{
-    margin-top: 2rem;
-    width: auto;
-    height:auto;
-    gap:2rem;
-  }
 
-  .profile__line{
-    position: relative;
-    top: -3rem;
-    left:17rem;
-  }
+ .director__caption{
+   margin-top: 2rem;
+   width: auto;
+   height:auto;
+   gap:2rem;
+ }
 
-  .director__image{
-    display: flex;
-    width: 10rem;
-    height: 9rem;
-    margin-top:0;
-    margin-right: 2rem;
-    position: relative;
-    top:0;
-  }
 
-  .about,.instagram{
-    flex:1;
-  }
+ .profile__line{
+   position: relative;
+   top: -3rem;
+   left:17rem;
+ }
 
-  .instagram__content{
-    flex-direction: row;
-    flex-wrap: wrap;
-    width:25rem;
-    height:9rem;
-    gap:1rem;
-  }
 
-  .reviews{
-    width:35rem;
-  }
+ .director__image{
+   display: flex;
+   width: 10rem;
+   height: 9rem;
+   margin-top:0;
+   margin-right: 2rem;
+   position: relative;
+   top:0;
+ }
 
-  .track__square{
-    gap:0.5rem;
-  }
 
-  .colors{
-    margin-bottom:0;
-    position: relative;
-    top:99%;
-    left: -17rem;
-  }
+ .about,.instagram{
+   flex:1;
+ }
+
+
+ .instagram__content{
+   flex-direction: row;
+   flex-wrap: wrap;
+   width:25rem;
+   height:9rem;
+   gap:1rem;
+ }
+
+
+ .reviews{
+   width:35rem;
+ }
+
+
+ .track__square{
+   gap:0.5rem;
+ }
+
+
+ .colors{
+   margin-bottom:0;
+   position: relative;
+   top:99%;
+   left: -17rem;
+ }
 }
     
 /* ==========================================================================
