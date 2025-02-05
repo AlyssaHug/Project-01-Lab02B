@@ -1,13 +1,12 @@
 /* ==========================================================================
    Base styles: opinionated defaults :)
    ========================================================================== */
-
-   html {
-    color: #3B3B3B;
-    font-size: 1em;
-    line-height: 1.4;
-    font-family: 'Ubuntu';
-  }
+html {
+  color: #3B3B3B;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Ubuntu";
+}
   /*
    * A better looking default horizontal rule
    */
@@ -123,6 +122,7 @@
     font-size: 12px;
     color: #939393;
   }
+
   /*====News Section====*/
     /*==news container==*/
     .news-item, .news-priority {
@@ -151,8 +151,9 @@
       }
       /*==news picture==*/
       .news__picture {
-        width: 30rem;
-        height: 18rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
       /*==news title==*/
       .news__info {
@@ -164,18 +165,20 @@
         left: 0;
         padding: 1px;
         width: 100%;
-        height: 20%;
+        height: 15%;
         display: flex;
         flex-direction: column;
       }
-      .news__heading {
+      .news__heading, .image__title {
         font-size: 16px;
         font-weight: bold;
         margin: 5px 10px 0;
+        color: white;
       }
-      .news__subheading {
+      .news__subheading, .gallery__type {
         font-size: 11px;
         margin: 0 10px 10px;
+        color: white;
       }
 
       .news__icon {
@@ -194,31 +197,17 @@
         height: 16rem;
         align-self: center;
       }
+
 /*====================
 Sandy's footer section
 ======================*/
-
-/*=================================
-General footer style
-=================================*/
-
 footer{
   background-color: #0E2E4E;
   color:#fff;
-  display:flex;
   padding:4px 0;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   width: 100%;
-  height: auto;
   position: absolute;
   left: 0;
-}
-
-.flexbox_container{
-  display:flex;
-  flex-wrap: wrap;
-  gap: 2rem;
 }
 
 .director__image{
@@ -227,13 +216,17 @@ footer{
   flex-shrink: 0;
   border-radius: 100%;
 }
-
+.director {
+  width: fit-content;
+  margin: 0 auto;
+}
 .profile__line{
-  width: 15rem;
+  width: 7rem;
   height: 0.3rem;
   background-color: #FFB901;
   margin-bottom: 4rem;
-  margin-top:0;
+  margin-top: 10px auto 0;
+  margin-left: 26%;
 }
 
 .reviews__heading{
@@ -256,13 +249,13 @@ footer{
   border-bottom: 1px solid #19B2DE;
 }
 
-.user{
-  color: #1BADE6;
-  text-align: justify;
-  font-family:'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-}
+    .user{
+      color: #1BADE6;
+      text-align: justify;
+      font-family:'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+    }
 
 .track__square{
   display: flex;
@@ -383,9 +376,6 @@ input{
       font-size: 34px;
       padding: 5rem 2rem 2rem 2rem;
     }
-
-
-
    /*==================================
     Body Styles - Alyssa
   ==================================*/
@@ -399,13 +389,13 @@ input{
 
   .service__text {
     flex: 1;
+    margin-left: 2%;
+    margin-right: 8%;
   }
       .service__header {
         margin: auto auto 5px 5px;
       }
-      .service__desc {
-        margin: auto 80px 5px 5px;
-      }
+
   .page-services{
     display: flex;
     flex-direction: column;
@@ -421,6 +411,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 5%;
   }
   .services__content {
     display: grid;
@@ -434,7 +425,9 @@ input{
   /*====Gallery Section====*/
 
   .page-gallery {
-    margin: 50px auto;
+    margin-top: 50px;
+    margin-right: 5rem;
+    margin-left: 5rem;
   }
     /*==Gallery content==*/
     .gallery__content {
@@ -443,72 +436,72 @@ input{
       flex-direction: column;
 
     }
+    .text-overlay, .color-overlay 
+    [hidden] {
+      display: none;
+    }
   /*====Clients section====*/
-  .page-clients,
+  .page-clients
   [hidden] {
     display: none !important;
   }
-    /*====Sandy Footer====*/
+    /*======================
+          Sandy Footer
+    ========================*/
      /* About us and instagram section hidden in mobile size */
   .about, .instagram,
   [hidden] {
     display: none !important;
   }
-
-  .flexbox_container{
-    display: flex;
-    flex-direction: column;
+  footer {
+    display: grid;
+    grid-template-areas:
+    "director"
+    "track"
+    "reviews";
   }
-
+  .director{
+    grid-area: director;
+    margin-bottom: 0;
+  }
   .director__info{
     display: flex;
     align-items: flex-start;
-    margin: 2rem;
-    gap: 2rem;
-    order:-2;
+    gap: 1rem;
     width: 27rem;
-    height: 11.375rem;
     flex-shrink: 0;
+    margin-top: 3rem;
   }
-
-  .director__caption{
-    margin-left:0.47rem;
-    margin-right:1rem;
-    flex-shrink: 0;
-  }
-
   .director__image{
     width: 8.66275rem;
     height: 7.49113rem;
     margin-top:0;
     flex-shrink: 0;
   }
-
+  
   .director__caption{
-    width: 20rem;
-    height:auto;
+    max-width: 15rem;
     flex-shrink: 0;
-    font-size:0.75rem;
+    font-size: 12px;
   }
-
+  .profile__line {
+    margin-left: 38%;
+    margin-bottom: 5%;
+  }
   .track{
-    display:flex;
-    flex-direction: column;
     width: 15rem;
     height: 11rem;
-    flex-shrink: 0;
-    order:-1;
+    grid-area: track;
+    margin: 0 15% 0 auto;
   }
 
-  .review{
-    display: flex;
+  .reviews{
     width: 24.6875rem;
     height: 20.875rem;
-    flex-direction: column;
-    align-items:flex-start;
     gap: 0.625rem;
-    flex-shrink: 0;
     margin: auto;
+    align-items: left;
+    grid-area: reviews;
   }
 
   .reviews__heading{
@@ -523,23 +516,25 @@ input{
     line-height: 0.875rem;
   }
   
-  .reviews__content{
-    color: #FFF;
-    font-family: "Open Sans";
-    font-size: 0.5625rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 0.875rem;
-  }
+    .reviews__content{
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 0.5625rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 0.875rem;
+    }
 
   .reviews__comment{
     align-self: stretch;
     width:24.6875rem;
     height:5.25rem;
   }
-
+  .colors {
+    margin-left: auto;
+    margin-right: auto;
   }
-
+  }
    /* ==========================================================================
       Media Query for Tablet
      ========================================================================== */
@@ -547,11 +542,15 @@ input{
  /*==================================
     Body Styles - Alyssa
   ==================================*/
-
+    .page__intro {
+      margin: 5% 2%;
+    }
   /*====Services section====*/
+ 
   .services__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5%;
   }
     .service__item {
       display: flex;
@@ -563,6 +562,9 @@ input{
   }
   .service__header {
     text-align: center;
+  }
+  .service__desc {
+    margin: auto 5%;
   }
 
 /*====News section====*/
@@ -592,6 +594,9 @@ article .news__picture {
 .news__info {
 max-width: 598px;
 }
+.news-item .news__info {
+  height: 20%;
+}
 
 /*====Gallery section====*/
 .gallery__content {
@@ -604,7 +609,12 @@ max-width: 598px;
   width: 292px;
   height: 256px;
 }
+
 /*====Clients section====*/
+.page-clients {
+  margin-top: 3rem;
+  margin-bottom: 65px; 
+}
 .clients__content{
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
@@ -715,6 +725,11 @@ max-width: 598px;
         margin: 0 auto;
       }
 
+      /*==gallery text==*/
+      .text-overlay, .color-overlay 
+      [hidden] {
+        display: none;
+      }
 }
     
     /* ==========================================================================
@@ -868,6 +883,9 @@ max-width: 598px;
     width: 320px;
     height: 256px;
   }
+  .news__info {
+    height: 20%;
+  }
 
   /*====gallery section====*/
   .gallery__content {
@@ -879,10 +897,64 @@ max-width: 598px;
     max-width: 1024px;
     gap: 0px;
   }
-  .gallery__image {
+  .gallery__item {
+    position: relative;
     width: 320px;
     height: 256px;
+    overflow: hidden;
+  }
+  .gallery__image {
+    width: 100%;
+    height: 100%;
     grid-column: span 1;
+    object-fit: cover;
+    display: block;
+  }
+  /*====gallery overlay css + hover====*/
+  .color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 178, 222, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .gallery__item:hover .color-overlay {
+    opacity: 1;
+  }
+  .text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .gallery__item:hover .text-overlay {
+    opacity: 1;
+  }
+  .gallery__icon {
+    position: absolute;
+    width: 2rem;
+    top: 0.7rem;
+    height: 2rem;
+    background-color: #007bbf;
+    border-radius: 2px;
+    opacity: 0;
+    margin-left: 15rem;
+  }
+  .gallery__item:hover .gallery__icon {
+    opacity: 1;
+  }
+  
+  /*==Clients==*/
+  .page-clients {
+    margin-top: 3rem;
+    margin-bottom: 65px; 
   }
   .clients__content {
     display: grid;
@@ -897,17 +969,11 @@ max-width: 598px;
     grid-column: span 1;
   }      
 
-/*==Sandy Footer====*/
+/*======================
+      Sandy Footer
+========================*/
 
-  .flexbox_container{
-    display: flex;
-    flex-direction:row;
-    justify-content:space-around;
-    align-items: flex-start;
-    margin-left:6rem;
-    margin-right:6rem;
-    gap:2rem;
-  }
+
 
   .director__info{
     display: flex;
@@ -917,7 +983,10 @@ max-width: 598px;
     align-items: center;
     gap: 2rem;
     }
-
+    .director {
+      width: fit-content;
+      margin: 0 auto;
+    }
 
   .about, .instagram, .track{
     flex:1;
