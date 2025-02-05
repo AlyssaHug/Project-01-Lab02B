@@ -72,15 +72,24 @@
     /* Make transparent banner text */
     .banner__item--top:hover, .banner__item--middle:hover, .banner__item--bottom:hover {
       background: rgba(255, 255, 255, 0.8); 
-}
-
-
+    } 
 
     .nav__arrow { 
       font-family: 'Noto Sans';font-size: 1.2em;
       font-weight: 100;
     } 
-   
+
+    .banner__image {
+      display:none;
+    }
+
+    #placeholder__banner {
+      width: 68%;
+      max-height: 30rem;
+      display: block;
+    }
+
+  
 
 /*==================================
     Body Styles - Alyssa
