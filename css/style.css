@@ -251,6 +251,8 @@ footer {
 
 .instagram{
   margin-right: 2rem;
+  width:auto;
+  height:auto;
 }
 .instagram__content{
   display: flex;
@@ -359,13 +361,6 @@ button{
 
 input{
   border-radius: 5px 0 0 5px;
-}
-
-.colors{
-  margin-bottom:0;
-  position: absolute;
-  top:98%;
-  left:5rem;
 }
 
 /* ==========================================================================
@@ -539,12 +534,11 @@ Base Mobile Screen
     position: relative;
     top:-5rem;
     left:-6rem;
-    width: 10rem;
+    width: 15rem;
     height: auto;
     flex:2;
   }
 
-  
   .reviews__content{
     color: #FFF;
     font-family: "Open Sans";
@@ -749,11 +743,93 @@ Base Mobile Screen
   [hidden] {
     display: none;
   }
+
+/*======================
+Sandy Footer TABLET!
+========================*/
+.flexbox_container{
+  display: flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  margin-left:3rem;
+  margin-right:3rem;
+  gap:2rem;
+}
+
+.director {
+  width: fit-content;
+  margin: 0;
+}
+  
+.director__image{
+  position: relative;
+  top:-1rem;
+  left:1rem;
+}
+
+.director__info{
+  display: flex;
+  flex-direction: row;
+  margin-left:3rem;
+  margin-right: 3rem;
+  margin-top:3rem;
+  }
+
+  .director__caption{
+    margin-top: 2rem;
+    width: auto;
+    height:auto;
+    gap:2rem;
+  }
+
+  .profile__line{
+    position: relative;
+    top: -3rem;
+    left:17rem;
+  }
+
+  .director__image{
+    display: flex;
+    width: 10rem;
+    height: 9rem;
+    margin-top:0;
+    margin-right: 2rem;
+    position: relative;
+    top:0;
+  }
+
+  .about,.instagram{
+    flex:1;
+  }
+
+  .instagram__content{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:25rem;
+    height:9rem;
+    gap:1rem;
+  }
+
+  .reviews{
+    width:35rem;
+  }
+
+  .track__square{
+    gap:0.5rem;
+  }
+
+  .colors{
+    margin-bottom:0;
+    position: relative;
+    top:99%;
+    left: -17rem;
+  }
+
 }
     
-    /* ==========================================================================
-        Media Query for Desktop
-       ========================================================================== */
+/* ==========================================================================
+Media Query for Desktop
+========================================================================== */
     
 @media only screen and (min-width: 64em) {
   /* Style adjustments for viewports that meet the condition */
@@ -934,10 +1010,6 @@ Base Mobile Screen
     grid-column: span 1;
   } 
 
-  /*======================
-Sandy Footer TABLET!
-========================*/
-  
 }
 
 /*======================
@@ -971,12 +1043,20 @@ Sandy Footer
     gap: 2rem;
     }
 
-  .about, .instagram, .track{
+
+  .instagram{
+    flex:1;
+    gap:1rem;
+  }
+
+  .about, .track{
     flex:1;
   }
 
   .reviews{
     flex:2;
+    gap:1rem;
+    height: 1fr;
   }
 
   .about{
@@ -986,10 +1066,6 @@ Sandy Footer
 
   .about__text{
     width:20rem;
-  }
-
-  .reviews{
-    height: 1fr;
   }
 
   .reviews__comment{
@@ -1007,5 +1083,12 @@ Sandy Footer
     gap: 0.3125rem;
     flex-shrink: 0;
     flex-wrap: wrap;
+  }
+
+  .colors{
+    margin-bottom:0;
+    position: relative;
+    top:99%;
+    left: -26rem;
   }
 }
