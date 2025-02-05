@@ -214,15 +214,17 @@ footer {
 .director__caption{
   position: relative;
   top:-1rem;
+  width:45rem;
+  margin: 2rem;
 }
 
 .profile__line{
-  position: absolute;
+  position: relative;
   width: 7rem;
   height: 0.3rem;
   background-color: #FFB901;
-  left:25.5rem;
-  top: 12rem;
+  left:21.5rem;
+  top: -2rem;
 }
 
 .reviews__heading{
@@ -476,85 +478,98 @@ Base Mobile Screen
     flex-direction: column;
   }
 
+  .director {
+    width: fit-content;
+    margin: 0;
+  }
+
   .director__info{
     display: flex;
-    align-items: flex-start;
-    margin: 2rem;
-    gap: 2rem;
+    flex-direction: row;
+    margin-left:3rem;
+    margin-right: 3rem;
     order:-2;
-    width: 27rem;
-    height: 11.375rem;
-    flex-shrink: 0;
   }
 
   .director__caption{
-    margin-left:0.47rem;
-    margin-right:1rem;
-    flex-shrink: 0;
+    margin-top: 2rem;
+    width: 15rem;
+    height:auto;
+    font-size: 12px;
+    gap:2rem;
+  }
+
+  .profile__line{
+    position: relative;
+    top: -3rem;
+    left:15rem;
   }
 
   .director__image{
-    width: 8.66275rem;
-    height: 7.49113rem;
+    display: flex;
+    width: 8rem;
+    height: 7rem;
     margin-top:0;
-    flex-shrink: 0;
+    margin-right: 2rem;
+    position: relative;
+    top:1rem;
+
   }
 
-  .director__caption{
-    width: 20rem;
-    height:auto;
-    flex-shrink: 0;
-    font-size:0.75rem;
+  .track__heading{
+    margin-right: 1rem;
   }
 
   .track{
     display:flex;
     flex-direction: column;
+    position: relative;
+    left:10rem;
+    top:-4rem;
     width: 15rem;
     height: 11rem;
-    flex-shrink: 0;
     order:-1;
+    flex:1;
   }
 
-  .review{
+  .reviews{
     display: flex;
-    width: 24.6875rem;
-    height: 20.875rem;
-    flex-direction: column;
+    flex-direction:column;
     align-items:flex-start;
-    gap: 0.625rem;
-    flex-shrink: 0;
-    margin: auto;
+    position: relative;
+    top:-5rem;
+    left:-6rem;
+    width: 10rem;
+    height: auto;
+    flex:2;
   }
 
-  .reviews__heading{
-    font-size: 0.9375rem;
-    font-weight: 500;
-  }
-
-  .user{
-    font-size: 0.5625rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 0.875rem;
-  }
-
+  
   .reviews__content{
     color: #FFF;
     font-family: "Open Sans";
-    font-size: 0.5625rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 0.875rem;
+    font-size: 0.8rem;
+    font-style:normal;
+    font-weight: 300;
+    line-height: 1rem;
   }
 
   .reviews__comment{
-    align-self: stretch;
-    width:24.6875rem;
-    height:5.25rem;
+    width: 28rem;
+    flex-direction:column;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+
+  .track__square{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.3125rem;
+    flex-shrink: 0;
+    flex-wrap: wrap;
   }
 }
-   
 
    /* ==========================================================================
       Media Query for Tablet
@@ -917,11 +932,17 @@ Base Mobile Screen
 
   .client__logo {
     grid-column: span 1;
-  }      
+  } 
 
   /*======================
-      Sandy Footer
-  ========================*/
+Sandy Footer TABLET!
+========================*/
+  
+}
+
+/*======================
+Sandy Footer
+========================*/
 
 /*desktop screen style*/
 @media only screen and (min-width: 64em){
@@ -987,5 +1008,4 @@ Base Mobile Screen
     flex-shrink: 0;
     flex-wrap: wrap;
   }
-}
 }
