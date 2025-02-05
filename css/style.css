@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Base styles: opinionated defaults :)
    ========================================================================== */
 html {
   color: #3B3B3B;
@@ -18,7 +18,9 @@ html {
     margin: 1em 0;
     padding: 0;
   }
-/* Styling for whole website! - Thea */
+/*==================================
+    Body Styles - Thea
+  ==================================*/
     /* company logo positioning */
     .company__logo {
       display: block;
@@ -65,6 +67,24 @@ html {
     .nav__item a:hover .nav__arrow {
       opacity: 0; 
     }
+
+    /* Make transparent banner text */
+    .banner__item--top:hover, .banner__item--middle:hover, .banner__item--bottom:hover {
+      background: rgba(255, 255, 255, 0.8); 
+    } 
+
+    .nav__arrow { 
+      font-family: 'Noto Sans';font-size: 1.2em;
+      font-weight: 100;
+    } 
+
+    .banner__image {
+      display:none;
+    }
+
+
+  
+
 /*==================================
     Body Styles - Alyssa
   ==================================*/
@@ -335,6 +355,10 @@ input{
   @media screen and (max-width: 39.9375em){
 /* Thea's code! Header Section */
     /* Top Banner Hide when Screen Smaller */
+
+    /*==================================
+  Mobile Styles - Thea
+  ==================================*/
     .banner, .column,
     [hidden] {
       display: none !important;
@@ -605,7 +629,7 @@ max-width: 598px;
 }
 
   /* ==========================================================================
-      Media Query for Tablet
+      Media Query for Tablet - Thea
      ========================================================================== */
        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       /* Style adjustments for viewports that meet the condition */
@@ -662,7 +686,10 @@ max-width: 598px;
         font-size: 1em;
         padding: 0.3em 1em 0.3em 1em;
         width: fit-content;
+        margin-left: 5vw;
+        margin-right: 50vw;
       }
+
       .banner__item--top {
         margin-left: 5rem;
         margin-top: 9rem;
@@ -684,7 +711,20 @@ max-width: 598px;
         margin-bottom: 0.5rem;
         padding: 0.5em;
         background-color: white;
+
+        
       }
+
+
+      #placeholder__banner {
+        width: 100%;
+        height: 100%;
+        max-height: 60vh;
+        max-width: 100vw;
+        display: block;
+        margin: 0 auto;
+      }
+
       /*==gallery text==*/
       .text-overlay, .color-overlay 
       [hidden] {
@@ -700,6 +740,10 @@ max-width: 598px;
         /* Style adjustments for viewports that meet the condition */
 
   /* for the banner */
+
+  /*==================================
+  Desktop Styles - Thea
+  ==================================*/
 
         .banner {
           background: #EBEBEB;
@@ -721,7 +765,7 @@ max-width: 598px;
           flex-direction: column;
           padding: 1rem;
           font-size: 1.2em;
-          padding: 0.3em 1em 0.3em 1em;
+          padding: 1em 1em 0.3em 1em;
           width: fit-content;
           margin-left: 15vw;
           margin-right: 50vw;
@@ -749,6 +793,60 @@ max-width: 598px;
           padding: 1em;
           background-color: white;
         }
+
+        .page__header .row {
+          display: flex;
+          align-items: center; 
+          justify-content: flex-start; 
+          width: 100%;
+          padding: 0; 
+          margin: 0;
+        }
+        
+        /* Logo stays on the left */
+        .company__logo {
+          height: 2rem; 
+          width: auto;
+          margin-bottom: -5rem;
+          margin-right: 20rem; 
+        }
+        
+        .nav__list {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 52vw; 
+          display: flex;
+          transform: translateX(-15rem);
+        }
+        
+        /* centers text and makes it grow and shrink */
+        .nav__item {
+          flex: 1; 
+          text-align: left; 
+        }
+        
+        /*  is the inside content! (text) */
+        .nav__item a {
+          display: block;
+          color: white;
+          text-align: left;
+          text-decoration: none;
+          padding-top: 5vw;
+          padding-bottom: 1em;
+          padding-left: 1em;
+          transition: 0.3s ease;
+        }
+
+        #placeholder__banner {
+          width: 100%;
+          height: 100%;
+          max-height: 60vh;
+          max-width: 68vw;
+          display: block;
+          margin: 0 auto;
+        }
+
       
 /*==================================
     Body Styles - Alyssa

@@ -7,6 +7,8 @@
   <title>Metrolics</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+  
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -49,10 +51,31 @@
       <span class="banner__item--middle">Quick on the feet</span>
       <span class="banner__item--bottom">Metro Styling Reinvented</span>
       </div>
-      <img class="banner__image" src="images/placeholder.svg" alt="placeholder image">
+      <div class="slideshow">
+      <img class="banner__image" src="images/banner.svg" alt="placeholder image">
+      <img class="banner__image" id="placeholder__banner"src="images/placeholder.svg" alt="placeholder image">
+      </div>
     </section>
 
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("banner__image");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+    
     <h1 class="page__intro">Hey Folks! We are the <span class="brand-name">Metrolics</span> team.<br>It sports a responsive layout with a mobile layout.</h1>
+
 
     <section class="page-services">
       <h2 class="services__title">Things That We Do</h2>
