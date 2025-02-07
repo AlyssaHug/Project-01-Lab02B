@@ -638,7 +638,15 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       margin-bottom: 5%;
+      text-align: center;
     }
+    .service__header {
+      text-align: center;
+    }
+    .service__desc {
+      text-align: left;
+    }
+
     .news-item {
       width: 292px;
       height: 256px;
@@ -1036,7 +1044,12 @@
       max-width: 1000px;
       margin-left: auto;
       margin-right: auto;
+      text-align: center;
     }
+    .service__header {
+      text-align: center;
+    }
+
   
     /*====News section====*/
     .page-news {
